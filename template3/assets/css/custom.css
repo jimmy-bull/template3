@@ -524,6 +524,18 @@ nav.disabled {
         transform    : translate(-50%, -50%);
     }
 
+    .row.onepxPuma-gutter [class*='col-']:not(:first-child),
+    .row.onepxPuma-gutter [class*='col-']:not(:last-child) {
+        padding-right: 0px;
+        padding-left : 0px;
+    }
+
+    .row.onepxPuma-gutter[class*='col-']:first-child,
+    .row.onepxPuma-gutter [class*='col-']:last-child {
+        padding-right: 0px;
+        padding-left : 0px;
+    }
+
 }
 
 .logo-div {
