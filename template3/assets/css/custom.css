@@ -578,6 +578,10 @@ nav.disabled {
         border-bottom-style: solid;
         text-align         : center;
     }
+
+    .element_to_down{
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 992px) {
