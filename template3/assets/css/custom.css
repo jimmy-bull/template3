@@ -536,6 +536,10 @@ nav.disabled {
         padding-left : 0px;
     }
 
+    .element_to_down {
+        margin-top: 20px;
+    }
+
 }
 
 .logo-div {
@@ -579,9 +583,7 @@ nav.disabled {
         text-align         : center;
     }
 
-    .element_to_down {
-        margin-top: 20px;
-    }
+
 
     .black_on_small {
         color: black;
