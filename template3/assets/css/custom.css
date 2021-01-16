@@ -579,8 +579,12 @@ nav.disabled {
         text-align         : center;
     }
 
-    .element_to_down{
+    .element_to_down {
         margin-top: 20px;
+    }
+
+    .black_on_small {
+        color: black;
     }
 }
 
