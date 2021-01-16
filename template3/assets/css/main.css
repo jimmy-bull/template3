@@ -1,0 +1,566 @@
+@font-face {
+    font-family: bigBold;
+    src        : url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin        : 0;
+    padding       : 0;
+    font-family   : 'Bentham', serif;
+    display       : flex;
+    flex-direction: column;
+}
+
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+.promo_pox {
+    background   : rgb(188, 231, 240);
+    height       : 150px;
+    border-radius: 10px;
+    box-shadow   : 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+
+.promo_pox4 {
+    background-image   : url('../img/promo4.jpg');
+    height             : 150px;
+    border-radius      : 10px;
+    box-shadow         : 0 10px 15px rgba(25, 25, 25, 0.1);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: left;
+}
+
+.promo_pox2 {
+    /* background   : #dec8f3;*/
+    background-image   : url('../img/promo2.jpg');
+    height             : 150px;
+    border-radius      : 10px;
+    box-shadow         : 0 10px 15px rgba(25, 25, 25, 0.1);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: left;
+}
+
+.promo_pox3 {
+    /* background   : #dec8f3;*/
+    background-image   : url('../img/promo3.jpg');
+    height             : 150px;
+    border-radius      : 10px;
+    box-shadow         : 0 10px 15px rgba(25, 25, 25, 0.1);
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: left;
+}
+
+.txt_promo_box {
+    padding-top: 65px;
+    font-weight: bolder;
+    font-family: bigBold;
+    color      : black;
+    text-align : center;
+}
+
+
+.img_rounded_10 {
+    /* border-radius: 30px;*/
+    width : 100%;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color          : inherit;
+}
+
+.bg_for_images {
+    background-color: #eff1f0;
+    border-radius   : 5px;
+
+}
+
+.side_element_title {
+    font-size     : 13px;
+    text-align    : center;
+    margin-top    : 10px;
+    text-transform: uppercase;
+}
+
+a {
+    color: black;
+}
+
+.heart_block {
+    position        : absolute;
+    box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
+    border-radius   : 50%;
+    right           : 40px;
+    top             : 10px;
+    z-index         : 1;
+    background-color: white;
+    height          : 30px;
+    width           : 30px;
+    cursor          : pointer;
+}
+
+.quick_view_block {
+    position        : absolute;
+    box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
+    border-radius   : 50%;
+    right           : 40px;
+    top             : 50px;
+    z-index         : 1;
+    background-color: white;
+    height          : 30px;
+    width           : 30px;
+    cursor          : pointer;
+}
+
+.wish_on_product {
+    padding-top : 4px;
+    padding-left: 7px;
+}
+
+
+
+
+.img_rounded_10:hover {
+    animation         : pulse;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+    /* don't forget to set a duration! */
+}
+
+.title_of_collection {
+    font-family: bigBold;
+    color      : white;
+    position   : absolute;
+    bottom     : 40%;
+    z-index    : 1;
+    right      : 30%;
+    font-size  : 1.2em;
+}
+
+.btn_shop_now_collection {
+    position: absolute;
+    bottom  : 30%;
+    z-index : 1;
+    right   : 30%;
+}
+
+
+.title_of_men {
+    font-family: bigBold;
+    color      : black;
+    position   : absolute;
+    bottom     : 10%;
+    z-index    : 1;
+    right      : 30%;
+    font-size  : 1.2em;
+}
+
+.btn_shop_now_men {
+    position: absolute;
+    bottom  : 0%;
+    z-index : 1;
+    right   : 30%;
+}
+
+.feature_title {
+    font-weight: bolder;
+    font-size  : 50px;
+}
+
+.big_own_title {
+    font-weight   : bolder;
+    font-size     : 50px;
+    color         : white;
+    text-transform: uppercase;
+    padding-top   : 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .second_block_side {
+        margin-top: 30px;
+    }
+
+    .block_collection_on_mobile {
+        margin-top: 30px;
+    }
+
+    .title_of_men {
+        font-family: bigBold;
+        color      : black;
+        position   : absolute;
+        bottom     : 20%;
+        z-index    : 1;
+        right      : 30%;
+        font-size  : 1.2em;
+    }
+
+    .btn_shop_now_men {
+        position: absolute;
+        bottom  : 10%;
+        z-index : 1;
+        right   : 30%;
+    }
+
+    .feature_title {
+        font-size: 25px;
+    }
+
+    .sub_titltitle_store {
+        font-size: 15px;
+    }
+}
+
+/*TO REDUCE SPACE BETWEEN BOOTSTRAP columns*/
+.row.somepx-gutter {
+    margin-left : 0;
+    margin-right: 0;
+}
+
+.row.somepx-gutter [class*='col-']:not(:first-child),
+.row.somepx-gutter [class*='col-']:not(:last-child) {
+    padding-right: 5px;
+    padding-left : 5px;
+}
+
+.sub_title_grid_element {
+    color: lightgrey;
+}
+
+.row.twopx-gutter {
+    margin-left : 0;
+    margin-right: 0;
+}
+
+.row.twopx-gutter [class*='col-']:not(:first-child),
+.row.twopx-gutter[class*='col-']:not(:last-child) {
+    margin-right: -20px;
+    margin-left : -20px;
+}
+
+.row.twopx-gutter [class*='col-']:first-child,
+.row.twopx-gutter[class*='col-']:last-child {
+    margin-right: 0px;
+    margin-left : 0px;
+}
+
+.miniature_grid {
+    cursor: pointer;
+}
+
+.miniature_images {
+    cursor: pointer;
+}
+
+/*CUSTOM MODAL*/
+
+.my_own_moda_search {
+    /* don't forget to set a duration! */
+    height             : 100%;
+    width              : 0;
+    /* border-style    : solid;*/
+    background-color   : rgb(0, 0, 0);
+    /* Fallback color */
+    background-color   : rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    border-width       : 0px;
+    position           : fixed;
+    z-index            : 10000000000000000;
+    top                : 0;
+    left               : 0;
+    overflow           : auto;
+    /* Enable scroll if needed */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin          : 15% auto;
+    /* 15% from the top and centered */
+    padding         : 20px;
+    border          : 1px solid #888;
+    width           : 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+.txt_color_shows {
+    display: none;
+}
+
+.close_modal_search {
+    cursor: pointer;
+}
+
+/*
+MAIN MENU SIDEBAR OPEN*/
+.sidebar_main_menu {
+    height          : 100%;
+    width           : 0;
+    position        : fixed;
+    z-index         : 10000000000000000 !important;
+    top             : 0;
+    background-color: white;
+    overflow-x      : hidden;
+    transition      : 0.3s;
+    padding-top     : 10px;
+    left            : 0;
+}
+
+#myBtn {
+    display         : none;
+    /* Hidden by default */
+    position        : fixed;
+    /* Fixed/sticky position */
+    bottom          : 20px;
+    /* Place the button at the bottom of the page */
+    right           : 30px;
+    /* Place the button 30px from the right */
+    z-index         : 1000;
+    /* Make sure it does not overlap */
+    border          : none;
+    /* Remove borders */
+    outline         : none;
+    /* Remove outline */
+    background-color: #01FF70 !important;
+    /* Set a background color */
+    color           : white;
+    /* Text color */
+    cursor          : pointer;
+    /* Add a mouse pointer on hover */
+    padding         : 15px;
+    /* Some padding */
+    border-radius   : 10px;
+}
+
+.modal_close_btn {
+    background-color: #01FF70;
+    color           : white;
+}
+
+#search_icons_on_scroll {
+    display         : none;
+    /* Hidden by default */
+    position        : fixed;
+    /* Fixed/sticky position */
+    bottom          : 100px;
+    /* Place the button at the bottom of the page */
+    right           : 30px;
+    /* Place the button 30px from the right */
+    z-index         : 1000;
+    /* Make sure it does not overlap */
+    border          : none;
+    /* Remove borders */
+    outline         : none;
+    /* Remove outline */
+    background-color: #40423c !important;
+    /* Set a background color */
+    color           : white;
+    /* Text color */
+    cursor          : pointer;
+    /* Add a mouse pointer on hover */
+    padding         : 15px;
+    /* Some padding */
+    border-radius   : 10px;
+}
+
+.my_nav_link {
+    color: white;
+}
+
+
+.computer_menu {
+    background-color: rgba(117, 190, 218, 0.0);
+}
+
+.btn_send_search {
+    border-width    : 0px;
+    background-color: #01FF70;
+}
+
+.input_search {
+    background-color: #40423c;
+    border-width    : 0;
+    padding-top     : 15px;
+    padding-bottom  : 15px;
+}
+
+.scrollDisabled {
+    position  : fixed;
+    margin-top: 0;
+    width     : 100%;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
+
+footer {
+    background    : #40423c;
+    margin-top    : 150px;
+    padding-top   : 50px;
+    padding-bottom: 10px;
+}
+
+.news-letter-block {
+    background-color: white;
+    box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
+    border-radius   : 3.5px;
+    padding-top     : 10px;
+    padding-bottom  : 10px;
+}
+
+.footer_links {
+    color    : white;
+    font-size: 20px;
+}
+
+.block_icons_footer {
+    background-color: white;
+    padding         : 10px;
+    box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
+    border-radius   : 10px;
+}
+
+
+
+.sub_footer_links {
+    color    : white;
+    font-size: 15px;
+}
+
+.sub_footer_links:hover {
+    color         : #01FF70;
+    letter-spacing: 1px;
+    transition    : ease-in-out letter-spacing .2s, color .2s;
+}
+
+.txt_news_letter {
+    background-color: #40423c;
+    border-width    : 0;
+    border-radius   : 10px;
+    padding-top     : 15px;
+    padding-bottom  : 15px;
+}
+
+.others_images {
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .sub_titltitle_store {
+        bottom: 30px !important;
+    }
+
+    .sub_titltitle2_store {
+        bottom: 10px !important;
+    }
+
+    .sub_titltitle3_store {
+        bottom: -10px !important;
+    }
+
+    .btn_by_now_simple_add {
+        color: black !important;
+    }
+
+    footer {
+        padding-top: 0px;
+    }
+
+    .btn_add_news_letter {
+        color: black !important;
+    }
+
+    .second_footer_blocks {
+        margin-top: 10px;
+    }
+
+    .add_cart {
+        margin-left: 20px;
+    }
+
+
+}
+
+.zoom_block_phone {
+    display: none;
+}
+
+
+@media screen and (max-width: 360px) {
+    .sub_titltitle_store {
+        bottom: 10px !important;
+    }
+
+    .sub_titltitle2_store {
+        bottom: -20px !important;
+    }
+
+    .sub_titltitle3_store {
+        bottom: -40px !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .txt_color_shows {
+        display: block;
+    }
+
+    .miniature_grid {
+        display: none !important;
+    }
+
+    .drop_top_links_footer_icons {
+        margin-top: 10px;
+    }
+
+    .zoom_block_phone {
+        display: block;
+        width  : 100% !important;
+    }
+
+    .zoom_block {
+        display: none;
+    }
+
+    .description_part_main {
+        margin-top: 20px;
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 770px) {
+    .description_part_main {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .zoom_block_phone {
+        display: block;
+        width  : 100% !important;
+    }
+
+    .zoom_block {
+        display: none;
+    }
+
+}

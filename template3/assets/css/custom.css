@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
+
+@font-face {
+    font-family: thebold;
+    src        : url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+span,
+input,
+li {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+button {
+    font-family: thebold !important;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/*ONLY FOR THE CAROUSEL THAT HAVING THE "carou_responsive_div" CLASS */
+/*CUSTOM THE TWO BUTTON CONTROLER OF RESPONSIVE CAROUSEL*/
+.btn_carou_responsive_div {
+    font-size    : 1.7em !important;
+    box-shadow   : 0 10px 15px rgba(25, 25, 25, 0.1);
+    border-radius: 50% !important;
+    height       : 50px;
+    width        : 50px;
+    color        : #01FF70 !important;
+}
+
+/*PUT THE ALL THE TWO BUTTON OF CAROUSEL ON THE RIGHT OF THE SCREEN*/
+.owl-nav-carou_responsive_div {
+    right     : 0;
+    position  : absolute;
+    margin-top: 20px
+}
+
+nav.disabled {
+    display: block !important;
+}
+
+/*CUSTOM THE TWO BUTTON CONTROLER OF RESPONSIVE CAROUSEL*/
+.btn_carou_responsive_div:hover {
+    background-color          : #01FF70 !important;
+    transition                : background-color 1s;
+    color                     : white !important;
+    transition-timing-function: linear;
+}
+
+/*THE SEPARATOR*/
+.block_separator_carou_responsive {
+    border-style: solid;
+    height      : 0;
+    border-width: 1px;
+    margin-top  : 15px;
+    border-color: #01FF70;
+    cursor      : pointer;
+}
+
+/*STYLE OF COUNTER*/
+.block_counter_carou_responsive {
+    box-shadow   : 0 10px 15px rgba(25, 25, 25, 0.1);
+    border-radius: 50% !important;
+    width        : 30px;
+    height       : 30px;
+    text-align   : center;
+    font-size    : 14px;
+    padding-top  : 2px;
+    cursor       : pointer;
+    color        : #01FF70;
+}
+
+/*@media screen and (max-height: 768px) {}*/
+
+.owl-dots-carou_responsive_div {
+    display: none;
+}
+
+
+
+.bg_green_side_big_carou {
+    /* box-shadow  : 0 10px 15px rgba(25, 25, 25, 0.1);*/
+    border-width: 1px;
+    height      : auto;
+    border-color: #01FF70;
+}
+
+
+.row.onepx-gutter [class*='col-']:not(:first-child),
+.row.oneepx-gutter [class*='col-']:not(:last-child) {
+    padding-right: 0px;
+    padding-left : 0px;
+}
+
+.row.onepx-gutter [class*='col-']:first-child,
+.row.oneepx-gutter [class*='col-']:last-child {
+    padding-right: 0px;
+    padding-left : 0px;
+}
+
+.row1_of_element_on_big_carou {
+    position: absolute;
+    z-index : 1000 !important;
+    top     : 100px;
+    right   : 10%;
+}
+
+.price_carou_big_1 {
+    margin-right: 10%;
+    color       : white;
+    font-size   : 30px;
+}
+
+.btn_carou_buy_now_big {
+    border-width: 0px;
+    box-shadow  : 0 10px 15px rgba(25, 25, 25, 0.1);
+    color       : white;
+    padding     : 10px 20px 10px 20px;
+
+    border-radius   : 20px;
+    background-color: #01FF70;
+    font-size       : 12.5px;
+}
+
+.btn_carou_buy_now_big:hover {
+    background-color: white;
+    transition      : background-color 0.5s;
+    color           : #01FF70;
+}
+
+
+
+.row2_of_element_on_big_carou {
+    position: absolute;
+    z-index : 1000;
+    top     : 100px;
+    left    : 10%;
+}
+
+.sub_element {
+    border-width: 0px;
+    color       : white;
+    font-size   : 20px;
+    font-weight : bolder;
+}
+
+.row3_of_element_on_big_carou {
+    position: absolute;
+    z-index : 1000;
+    top     : 73%;
+    left    : 10%;
+
+}
+
+.txt-third_on_carou {
+    font-weight  : 300;
+    font-size    : 15px;
+    padding      : 10px 20px 10px 20px;
+    border-radius: 20px;
+    box-shadow   : 0 10px 15px rgba(25, 25, 25, 0.1);
+    border-style : solid;
+    border-width : 1px;
+    border-color : #01FF70;
+}
+
+.row4_of_element_on_big_carou {
+    position: absolute;
+    z-index : 1000 !important;
+    top     : 73%;
+    right   : 15%;
+}
+
+.btn_carou_explore_big {
+    border-width    : 0px;
+    box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
+    color           : white;
+    height          : 50px;
+    width           : 50px;
+    background-color: #01FF70;
+    border-radius   : 50%;
+    color           : white;
+    font-size       : 12.5px;
+}
+
+.btn_carou_explore_big:hover {
+    background-color: white;
+    height          : 55px;
+    width           : 55px;
+    transition      : background-color 0.5s, width .5s, height .5s;
+    color           : #01FF70;
+    font-size       : 20px;
+}
+
+.owl-dots-carou_carousel_big {
+    position: absolute;
+    z-index : 1;
+    top     : 80%;
+    right   : 45%;
+}
+
+.owl-dots-carou_carousel_big .owl-dot span {
+    background-color: transparent !important;
+    border-style    : solid;
+    border-width    : 2px;
+    border-color    : white;
+}
+
+.owl-dots-carou_carousel_big .active span {
+    background-color: #01FF70 !important;
+    border-color    : #01FF70 !important;
+}
+
+.owl-nav-owl-carousel_big {
+    display: none;
+}
+
+.carousel-indicators li.active {
+    background-color: white !important;
+}
+
+.carousel-indicators li {
+    border-radius   : 50%;
+    height          : 10px !important;
+    width           : 10px !important;
+    background-color: #01FF70 !important;
+}
+
+.my_own_carou {
+    position: relative;
+}
+
+.my_own_carou>div {
+    position: absolute;
+    z-index : 10000;
+}
+
+
+
+.carousel-control-next-icon {
+
+    color: #01FF70 !important;
+}
+
+.title_on_carou_big1 {
+    font-size     : 20px;
+    letter-spacing: 1px;
+    font-family   : thebold !important;
+}
+
+.vertical_horizon-center {
+    margin       : 0;
+    position     : absolute;
+    top          : 50%;
+    left         : 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform    : translate(-50%, -50%);
+}
+
+.center_verticaly {
+    margin   : 0;
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+    height   : 20%;
+}
+
+.icons_on_carou_phone_big_1 {
+    margin   : 0;
+    position : absolute;
+    top      : 40%;
+    right    : 10%;
+    transform: translate(-50%, -50%);
+    height   : 20%;
+    z-index  : 1000000;
+}
+
+.image_to_slide {
+    height : 100vh;
+    display: none;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.fine-ligne-carou {
+    border-style: solid;
+    border-width: 1px;
+    height      : 55%;
+    width       : 0px;
+    border-color: white;
+}
+
+.computer_menu {
+    position   : absolute;
+    z-index    : 1000;
+    padding-top: 30px;
+}
+
+.fa-grip-lines_block {
+    border-style    : solid;
+    height          : 100px;
+    width           : 100px;
+    padding         : 10px;
+    border-width    : 0px;
+    border-radius   : 50%;
+    background-color: #40423c;
+    cursor          : pointer;
+}
+
+.cart_counter {
+    position   : absolute;
+    color      : #01FF70 !important;
+    top        : 15px;
+    font-family: thebold !important;
+    font-size  : 20px;
+    font-weight: bolder;
+}
+
+/*BIG CAROUSEL 2 PART
+*/
+
+.main_block_to_center {
+    position : absolute;
+    z-index  : 100000;
+    top      : 40%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+    width    : 100%
+}
+
+.BigTitle_Carou2 {
+    text-align    : center;
+    width         : 100%;
+    color         : white;
+    letter-spacing: 51px;
+    text-transform: uppercase;
+    margin-top    : 50px;
+}
+
+.secondTitle_Carou1 {
+    margin-top : 50px;
+    font-family: thebold !important;
+    font-size  : 80px;
+    color      : #40423c !important;
+}
+
+.Date_Carou1 {
+    margin-top : 0px;
+    color      : #01FF70 !important;
+    font-size  : 50px;
+    margin-left: 5%;
+}
+
+.explore_Carou2 {
+    color              : white !important;
+    font-size          : 25px;
+    border-bottom-style: solid;
+    text-align         : center;
+}
+
+.explore_Carou2:hover {
+    text-decoration    : none;
+    border-bottom-color: #01FF70 !important;
+    transition         : ease border-bottom-color 2s;
+}
+
+.block_for_controler {
+    position : absolute;
+    z-index  : 10000;
+    left     : 50%;
+    bottom   : 5%;
+    transform: translateX(-50%)
+}
+
+.line-prev {
+    /*  position           : absolute;
+    z-index            : 100000;
+    bottom             : 10%;
+    left               : 44%;
+    transform          : translate(-50%, 50%);*/
+    color              : white !important;
+    font-size          : 25px;
+    border-bottom-style: solid;
+    cursor             : pointer;
+    width              : 50px;
+}
+
+.row_prev_big_carou2 {
+    /*  position : absolute;
+    z-index  : 100000;
+    bottom   : 10.2%;
+    left     : 49%;
+    transform: translate(-50%, 50%);*/
+    color    : white !important;
+    font-size: 20px;
+    cursor   : pointer;
+}
+
+
+.line-next {
+    /* position           : absolute;
+    z-index            : 100000;
+    bottom             : 10%;
+    left               : 55%;
+    transform          : translate(-50%, 50%);*/
+    color              : white !important;
+    font-size          : 25px;
+    border-bottom-style: solid;
+    cursor             : pointer;
+    width              : 50px;
+}
+
+.row_next_big_carou2 {
+    /* position : absolute;
+    z-index  : 100000;
+    bottom   : 10.2%;
+    left     : 60%;
+    transform: translate(-50%, 50%);*/
+    color    : white !important;
+    font-size: 20px;
+    cursor   : pointer;
+}
+
+.next-control-big-carou2:hover {
+    color     : #01FF70 !important;
+    transition: ease color 1s;
+}
+
+.prev-control-big-carou2:hover {
+    color     : #01FF70 !important;
+    transition: ease color 1s;
+}
+
+/*END OFCAROUSEL 2 PART ;
+*/
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .image_to_slide {
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .row1_of_element_on_big_carou {
+        left: 10%;
+        top : 70px;
+    }
+
+    .row2_of_element_on_big_carou,
+    .row3_of_element_on_big_carou {
+        display: none !important;
+    }
+
+    .btn_by_now_simple {
+        border-radius      : 0px;
+        background-color   : transparent;
+        border-bottom-style: solid !important;
+        border-color       : #01FF70 !important;
+        border-bottom-width: 1px !important;
+    }
+
+    .hide768 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .row1_of_element_on_big_carou {
+        left: 10%;
+        top : 90px;
+    }
+
+    .row4_of_element_on_big_carou {
+        top: 82%;
+    }
+
+    .btn_by_now_simple {
+        border-radius      : 0px;
+        background-color   : transparent;
+        border-bottom-style: solid !important;
+        border-color       : #01FF70 !important;
+        border-bottom-width: 1px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .txt_right_nav_big_carou1 {
+        display: none;
+    }
+
+    /*.image_to_slide {
+        height: 30% !important;
+        width : 30% !important;
+    }*/
+}
+
+.logo-div {
+    margin-left: 5%;
+}
+
+.span_second_block_link_on_carou_big1 {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .logo-div {
+        margin: 0 !important;
+    }
+
+    .txt_left_nav_big_carou1 {
+        display: none;
+    }
+
+    .span_second_block_link_on_carou_big1 {
+        margin-left: 20px !important;
+    }
+
+    .BigTitle_Carou2 {
+        font-size     : 18px;
+        letter-spacing: 10px;
+    }
+
+    .secondTitle_Carou1 {
+        font-size: 40px;
+    }
+
+    .Date_Carou1 {
+        font-size: 30px;
+    }
+
+    .explore_Carou2 {
+        color              : white !important;
+        font-size          : 20px;
+        border-bottom-style: solid;
+        text-align         : center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .logo-div {
+        margin: 0 !important;
+    }
+
+    .txt_right_nav_big_carou1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .span_second_block_link_on_carou_big1 {
+        margin-left: 10px !important;
+    }
+
+}
