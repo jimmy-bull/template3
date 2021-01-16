@@ -536,18 +536,7 @@ nav.disabled {
         padding-left : 0px;
     }
 
-    .row.onepxadd-gutter [class*='col-'],
-    .row.onepxadd-gutter [class*='col-'] {
-        margin-right: 2px;
-        margin-left : 2px;
-    }
-
-    .row.onepxadd-gutter[class*='col-']:first-child,
-    .row.onepxadd-gutter [class*='col-']:last-child {
-        padding-right: 0px;
-        padding-left : 0px;
-    }
-
+   
 
 
     .element_to_down {
