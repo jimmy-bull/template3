@@ -586,7 +586,10 @@ nav.disabled {
     .black_on_small {
         color: black;
     }
-    .txt_promo_box,.promo_pox2{
+
+    .txt_promo_box,
+    .promo_pox2,
+    .txt_to_reduce {
         font-size: 18px;
     }
 }
