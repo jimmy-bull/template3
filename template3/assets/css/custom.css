@@ -536,6 +536,20 @@ nav.disabled {
         padding-left : 0px;
     }
 
+    .row.onepxadd-gutter [class*='col-']:not(:first-child),
+    .row.onepxadd-gutter [class*='col-']:not(:last-child) {
+        padding-right: 2px;
+        padding-left : 2px;
+    }
+
+    .row.onepxadd-gutter[class*='col-']:first-child,
+    .row.onepxadd-gutter [class*='col-']:last-child {
+        padding-right: 0px;
+        padding-left : 0px;
+    }
+
+
+
     .element_to_down {
         margin-top: 20px;
     }
