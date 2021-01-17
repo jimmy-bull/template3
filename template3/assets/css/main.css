@@ -510,7 +510,7 @@ footer {
     background-size  : cover;
     display          : flex;
     /* contexte sur le parent */
-    padding-top: 867px;
+    height           : 867px;
 }
 
 .play_logo_parent {
