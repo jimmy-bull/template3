@@ -60,11 +60,13 @@
                             <img src="https://images.pexels.com/photos/3261068/pexels-photo-3261068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                                 class="col-lg-10 col-12" id="imgt">
                             <div class="play_logo_parent">
+                                <!--POSITIONING IS MANAGED IN JAVASCRIPT AT THE BOTTOM OF THIS PAGE-->
                                 <i style="color: #01FF70;font-size:25px" class='fas fa-play mt-1'></i>
                             </div>
 
                             <div class="col-lg-2">
-                                <div style="margin-top: 200px;">
+                                <div class="icons_home2_nav">
+                                    <!--POSITIONING IS MANAGED IN JAVASCRIPT AT THE BOTTOM OF THIS PAGE-->
                                     <i style="color: #01FF70;font-size:25px" class='fab fa-facebook mt-1'></i><br>
                                     <i style="color: #01FF70;font-size:25px" class='fab fa-pinterest mt-1'></i><br>
                                     <i style="color: #01FF70;font-size:25px" class='fab fa-instagram mt-1'></i><br>
@@ -188,13 +190,7 @@
     </style>
 
     <script>
-        $('.play_logo_parent').css({
-            "position": 'absolute',
-            "z-index": 1000,
-            "margin-top": document.getElementById("imgt").height / 2 + 'px',
-            "margin-left": document.getElementById("imgt").width / 2 + 'px'
-        })
-
+     
 
         // Recalculate breakpoint on resize
         window.addEventListener('resize', function () {
