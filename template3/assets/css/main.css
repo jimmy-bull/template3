@@ -505,15 +505,15 @@ footer {
 }
 
 .play_logo_parent {
-    border-width : 1px;
-    border-style : solid;
-    border-color : chartreuse;
-    height       : 70px;
-    width        : 70px;
-    border-radius: 50%;
-    position     : relative;
+    border-width    : 1px;
+    border-style    : solid;
+    border-color    : chartreuse;
+    height          : 70px;
+    width           : 70px;
+    border-radius   : 50%;
+    position        : relative;
     background-color: chartreuse;
-    opacity: 0.5;
+    opacity         : 0.5;
 }
 
 .fa-play {
@@ -522,6 +522,7 @@ footer {
     top      : 45%;
     left     : 50%;
     transform: translate(-50%, -50%);
+    opacity  : 0.5;
 }
 
 /*******/
