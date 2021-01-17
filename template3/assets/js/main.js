@@ -1,8 +1,6 @@
 
 let imgt = document.getElementById("imgt").height;
-$('.play_logo_parent').css({
-    "margin-top:":500 + "px"
-})
+
 
 //Get the button FOR SCROLLING TO TOP
 var mybutton = document.getElementById("myBtn");
@@ -177,4 +175,8 @@ $('.others_images:eq(0)').css({
     "border-width": 1 + "px",
     'box-sizing': 'border-box',
     'border-color': "#01FF70"
+})
+
+$('.play_logo_parent').css({
+    "margin-top:": parseInt(document.getElementById("imgt").height) + "px"
 })
