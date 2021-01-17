@@ -481,8 +481,8 @@ footer {
 .home2_nav {
     padding-top   : 20px;
     padding-bottom: 20px;
-    position: absolute;
-    z-index: 1000;
+    position      : absolute;
+    z-index       : 1000;
 }
 
 .txt_search_home2 {
@@ -495,6 +495,12 @@ footer {
 
 .hide_on_big {
     display: none;
+}
+
+.big_title_home2 {
+    font-size  : 100px;
+    font-weight: bolder;
+    margin-top: 50px;
 }
 
 /*******/
