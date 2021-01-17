@@ -186,7 +186,14 @@
     <!--SPECIFIQUE CSS FOR INDEX PAGE--->
     <style>
     </style>
- 
+
+    <script>
+        let imgt = document.getElementById("imgt").height;
+        $('.play_logo_parent').css({
+            "margin-top:": parseInt(document.getElementById("imgt").height) + "px"
+        })
+    </script>
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/carousel/owlcarousel/owl.carousel.min.js"></script>
     <script src="assets/js/aos.js"></script>
