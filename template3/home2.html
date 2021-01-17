@@ -204,7 +204,23 @@
     </style>
 
     <script>
-  
+        function element_resizing() { //SETTING ELEMENT MARGIN-TOP AND MARGIN-LEFT IN JAVASCRIPT DEPEND  ON THE IMAGES SIZE
+            $('.play_logo_parent').css({
+                "position": 'absolute',
+                "z-index": 1000,
+                "margin-top": document.getElementById("imgt").height / 2 + 'px',
+                "margin-left": document.getElementById("imgt").width / 2 + 'px'
+            })//
+
+            $('.icons_home2_nav').css({
+                "margin-top": (document.getElementById("imgt").height / 2) + 'px',
+            })
+        }
+        element_resizing();
+        // Recalculate breakpoint on resize
+        window.addEventListener('resize', function () {
+            element_resizing();
+        }, false);
     </script>
 
     <script src="assets/js/main.js"></script>
