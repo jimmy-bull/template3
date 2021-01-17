@@ -649,7 +649,7 @@ footer {
     .to_show_on_tabletteANDphone {
         position: absolute;
         z-index : 1000;
-        
+        top     : 0;
     }
 
 
