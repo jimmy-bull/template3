@@ -514,7 +514,8 @@ footer {
 }
 
 .fa-play {
-    margin-top: 70px;
+    text-align    : center;
+    vertical-align: center;
 }
 
 /*******/
