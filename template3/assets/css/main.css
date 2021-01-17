@@ -595,9 +595,11 @@ footer {
     }
 
 }
-.to_show_on_tabletteANDphone{
+
+.to_show_on_tabletteANDphone {
     display: none;
 }
+
 @media screen and (max-width: 768px) {
     .txt_color_shows {
         display: block;
@@ -624,7 +626,7 @@ footer {
         margin-top: 20px;
     }
 
-    .to_show_on_tabletteANDphone{
+    .to_show_on_tabletteANDphone {
         display: block;
     }
 
@@ -647,6 +649,7 @@ footer {
     .to_show_on_tabletteANDphone {
         position: absolute;
         z-index : 1000;
+        top     : 0;
     }
 
 
