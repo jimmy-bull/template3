@@ -505,9 +505,12 @@ footer {
 }
 
 .play_logo_parent {
-    border-width: 1px;
-    border-style: solid;
-    border-color: chartreuse;
+    border-width : 1px;
+    border-style : solid;
+    border-color : chartreuse;
+    height       : 50px;
+    width        : 50px;
+    border-radius: 50%;
 }
 
 /*******/
