@@ -1,4 +1,4 @@
-alert()
+
 let imgt = document.getElementById("imgt").height;
 $('.play_logo_parent').css({
     "margin-top:": imgt
