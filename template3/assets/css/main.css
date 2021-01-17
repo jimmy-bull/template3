@@ -505,13 +505,18 @@ footer {
 }
 
 .play_logo_parent {
-    border-width    : 0px;
-    border-style    : solid;
-    height          : 70px;
-    width           : 70px;
-    border-radius   : 50%;
-    position        : relative;
-    background-color: rgba(194, 247, 50, 0.5);
+    border-width      : 0px;
+    border-style      : solid;
+    height            : 70px;
+    width             : 70px;
+    border-radius     : 50%;
+    position          : relative;
+    background-color  : rgba(194, 247, 50, 0.5);
+    cursor            : pointer;
+    animation         : pulse infinite;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
 }
 
 .fa-play {
