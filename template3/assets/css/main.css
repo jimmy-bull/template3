@@ -491,6 +491,7 @@ footer {
     background-repeat  : no-repeat;
     background-position: right;
     background-size    : contain;
+    background-color   : transparent;
 }
 
 .hide_on_big {
