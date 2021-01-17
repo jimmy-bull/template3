@@ -1,5 +1,5 @@
 
-let imgt = document.getElementById("imgt").height;
+//let imgt = document.getElementById("imgt").height;
 
 
 //Get the button FOR SCROLLING TO TOP
