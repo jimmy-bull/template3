@@ -500,7 +500,8 @@ footer {
 .big_title_home2 {
     font-size  : 100px;
     font-weight: bolder;
-    margin-top: 50px;
+    margin-top : 50%;
+    translate  : (-50%);
 }
 
 /*******/
