@@ -177,6 +177,3 @@ $('.others_images:eq(0)').css({
     'border-color': "#01FF70"
 })
 
-$('.play_logo_parent').css({
-    "margin-top:": parseInt(document.getElementById("imgt").height) + "px"
-})
