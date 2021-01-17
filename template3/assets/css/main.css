@@ -504,6 +504,12 @@ footer {
     translate  : (-50%);
 }
 
+.play_logo_parent {
+    border-width: 1px;
+    border-style: solid;
+    border-color: chartreuse;
+}
+
 /*******/
 
 
