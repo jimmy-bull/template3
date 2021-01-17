@@ -122,11 +122,7 @@ $('.close_main_menu').click(function (e) {
     enableScrollOnBody();
 })
 
-var options = {
-    // more options here
-    scale: 1
-};
-new ImageZoom(document.getElementById("img-container"), options);
+
 
 
 
