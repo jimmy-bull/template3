@@ -16,6 +16,23 @@ body {
     flex-direction: column;
 }
 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline           : 0px !important;
+    -webkit-appearance: none;
+    box-shadow        : none !important;
+}
+
 
 #page-content {
     flex: 1 0 auto;
@@ -462,11 +479,11 @@ footer {
 
 /****HOME 2 COMPLETION****/
 .home2_nav {
-    padding-top: 20px;
+    padding-top   : 20px;
     padding-bottom: 20px;
 }
 
-.txt_search_home2{
+.txt_search_home2 {
     border-width: 0px 0px 1px 0px;
 }
 
