@@ -595,7 +595,9 @@ footer {
     }
 
 }
-
+.to_show_on_tabletteANDphone{
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .txt_color_shows {
         display: block;
@@ -622,7 +624,9 @@ footer {
         margin-top: 20px;
     }
 
-
+    .to_show_on_tabletteANDphone{
+        display: block;
+    }
 
     .row.bouncepxPuma-gutter [class*='col-']:not(:first-child),
     .row.bouncepxPuma-gutter [class*='col-']:not(:last-child) {
