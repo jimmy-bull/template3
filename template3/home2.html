@@ -188,7 +188,12 @@
     </style>
 
     <script>
-        let imgt = document.getElementById("imgt").width;
+        $('.play_logo_parent').css({
+            "position": 'absolute',
+            "z-index": 1000,
+            "margin-top": document.getElementById("imgt").height / 2 + 'px',
+            "margin-left": document.getElementById("imgt").width / 2 + 'px'
+        })
         function paly_position() {
             $('.play_logo_parent').css({
                 "position": 'absolute',
