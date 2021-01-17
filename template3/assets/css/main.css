@@ -507,7 +507,7 @@ footer {
 .play_logo_parent {
     border-width    : 1px;
     border-style    : solid;
-    border-color    : rgba(194, 247, 50, 1);
+    border-color    : rgba(194, 247, 50, 0.5);
     height          : 70px;
     width           : 70px;
     border-radius   : 50%;
