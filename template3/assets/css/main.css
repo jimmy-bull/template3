@@ -635,7 +635,9 @@ footer {
         padding-left : 0px;
     }
 
-
+    .hide_on_ipad {
+        display: none;
+    }
 
 
 
