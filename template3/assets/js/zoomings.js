@@ -1,5 +1,9 @@
 //DESCRIPTION PAGES EFFECT ON MINIATURE CLICKS
-
+var options = {
+    // more options here
+    scale: 1
+};
+new ImageZoom(document.getElementById("img-container"), options);
 $(".miniature_images:eq(0)").css({
     "border-style": "solid",
     "padding": 0 + "px",
