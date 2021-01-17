@@ -623,6 +623,21 @@ footer {
 
 
 
+    .row.bouncepxPuma-gutter [class*='col-']:not(:first-child),
+    .row.bouncepxPuma-gutter [class*='col-']:not(:last-child) {
+        padding-right: 0px;
+        padding-left : 0px;
+    }
+
+    .row.bouncepxPuma-gutter[class*='col-']:first-child,
+    .row.bouncepxPuma-gutter [class*='col-']:last-child {
+        padding-right: 0px;
+        padding-left : 0px;
+    }
+
+
+
+
 
 }
 
