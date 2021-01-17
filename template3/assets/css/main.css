@@ -512,6 +512,8 @@ footer {
     width        : 70px;
     border-radius: 50%;
     position     : relative;
+    background-color: chartreuse;
+    opacity: 0.5;
 }
 
 .fa-play {
