@@ -1,7 +1,7 @@
 
 let imgt = document.getElementById("imgt").height;
 $('.play_logo_parent').css({
-    "margin-top:": parseInt(imgt) + "px"
+    "margin-top:":500 + "px"
 })
 
 //Get the button FOR SCROLLING TO TOP
