@@ -504,13 +504,12 @@ footer {
     translate  : (-50%);
 }
 
-.block_play_logo {
-   
-}
+.block_play_logo {}
 
 .play_logo_parent {
-    margin  : auto;
-    
+    position: absolute;
+    z-index: 1000;
+
 }
 
 /*******/
