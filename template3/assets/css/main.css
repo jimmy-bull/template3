@@ -529,6 +529,9 @@ footer {
         margin-left: 20px;
     }
 
+    .hide_on_phone {
+        display: none;
+    }
 
 }
 
