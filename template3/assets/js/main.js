@@ -1,4 +1,3 @@
-alert(document.getElementById("imgt").height)
 
 
 //Get the button FOR SCROLLING TO TOP
