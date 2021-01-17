@@ -507,8 +507,8 @@ footer {
 .block_play_logo {
     position : absolute;
     z-index  : 1000;
-    top      : 50%;
-    right    : 50%;
+    top      : 50vh;
+    right    : 50vh;
     translate: (-50%, -50%);
 }
 
