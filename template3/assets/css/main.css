@@ -509,11 +509,12 @@ footer {
     background-image : url('https://images.pexels.com/photos/3261068/pexels-photo-3261068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size  : contain;
     height           : 1300px;
+    display          : flex;
     /* contexte sur le parent */
 }
 
 .play_logo_parent {
-    margin-top: 650px;
+    margin: auto;
     /* eh oui, tout bêtement */
 }
 
