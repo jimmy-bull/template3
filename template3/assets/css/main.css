@@ -514,7 +514,7 @@ footer {
     position          : relative;
     background-color  : rgba(194, 247, 50, 0.5);
     cursor            : pointer;
-    animation         : pulse infinite;
+    animation         : heartBeat infinite;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
     /* don't forget to set a duration! */
