@@ -505,11 +505,10 @@ footer {
 }
 
 .block_play_logo {
-    position : absolute;
-    z-index  : 1000;
-    top      : 50vh;
-    right    : 50vh;
-    translate: (-50%, -50%);
+    background-repeat: no-repeat;
+    background-image : url('https://images.pexels.com/photos/3261068/pexels-photo-3261068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size  : cover;
+    height           : 650px;
 }
 
 /*******/
