@@ -513,11 +513,11 @@ footer {
 }
 
 .play_logo_parent {
-    position : absolute;
-    top      : 50%;
-    /* poussé de la moitié de hauteur du référent */
-    transform: translateY(-50%);
+    margin-top: 50vh;
+    /* poussé de la moitié de hauteur de viewport */
+    transform : translateY(-50%);
     /* tiré de la moitié de sa propre hauteur */
+
 }
 
 /*******/
