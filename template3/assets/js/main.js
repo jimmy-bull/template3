@@ -1,5 +1,5 @@
 
-let imgt = document.getElementById("imgt").height;
+
 
 
 //Get the button FOR SCROLLING TO TOP
@@ -130,6 +130,3 @@ new ImageZoom(document.getElementById("img-container"), options);
 
 
 
-$('.play_logo_parent').css({
-    "margin-top:": parseInt(document.getElementById("imgt").height) + "px"
-})
