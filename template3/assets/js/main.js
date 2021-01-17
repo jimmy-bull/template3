@@ -1,4 +1,8 @@
-alert(document.getElementById("imgt").height)
+alert()
+let imgt = document.getElementById("imgt").height;
+$('play_logo_parent').css({
+    "margin-top:": imgt
+})
 
 //Get the button FOR SCROLLING TO TOP
 var mybutton = document.getElementById("myBtn");
