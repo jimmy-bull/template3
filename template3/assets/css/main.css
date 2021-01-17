@@ -512,7 +512,7 @@ footer {
     width           : 70px;
     border-radius   : 50%;
     position        : relative;
-    background-color: chartreuse;
+    background-color: rgba(194, 247, 50, 0.5);
     opacity         : 0.5;
 }
 
