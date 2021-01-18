@@ -536,6 +536,7 @@ footer {
     flex-wrap       : wrap;
     flex-direction  : row;
     height          : 200px;
+    align-items     : center;
     background-color: teal;
 }
 
