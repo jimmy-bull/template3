@@ -127,6 +127,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         responsiveClass: true,
+        navSpeed: 1000,
         responsive: {
             0: {
                 items: 2,
