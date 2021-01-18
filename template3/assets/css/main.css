@@ -535,6 +535,7 @@ footer {
     justify-content: flex-end;
     flex-wrap      : wrap;
     flex-direction : row;
+    align-items    : center;
 }
 
 /*******/
