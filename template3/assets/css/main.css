@@ -542,7 +542,7 @@ footer {
 
 .sub_container1 {
     display        : flex;
-   
+    justify-content: space-around;
 }
 
 .sub_container2 {
