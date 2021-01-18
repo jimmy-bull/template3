@@ -530,15 +530,18 @@ footer {
     opacity  : 1;
 }
 
-.block_title_trending {
-    display        : flex;
-    justify-content: flex-end;
-    flex-wrap      : wrap;
-    flex-direction : row;
-    align-items    : center;
-    height         : 200px;
-    align-content  : space-around;
+.main_container {
+    display         : flex;
+    justify-content : center;
+    flex-wrap       : wrap;
+    flex-direction  : row;
+    height          : 200px;
     background-color: teal;
+}
+
+.sub_container {
+    background-color: #01FF70;
+    width           : 50%;
 }
 
 /*******/
