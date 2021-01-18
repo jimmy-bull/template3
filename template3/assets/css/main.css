@@ -585,14 +585,16 @@ footer {
 }
 
 .block_heart_home2 {
-    border-style   : solid;
-    border-width   : 1px;
-    border-radius  : 50%;
-    height         : 50px;
-    width          : 50px;
-    justify-content: center;
-    align-items    : center;
-    display: flex;
+    border-style    : solid;
+    border-width    : 0px;
+    border-radius   : 50%;
+    height          : 50px;
+    width           : 50px;
+    justify-content : center;
+    align-items     : center;
+    display         : flex;
+    background-color: #01FF70;
+    box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
 }
 
 /*******/
