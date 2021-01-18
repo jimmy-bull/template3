@@ -148,7 +148,7 @@ $(document).ready(function () {
 var owl_home2 = $('.owl_home2');
 owl_home2.owlCarousel();
 // Go to the next item
-$('.btn_right_carousel_home2').click(function () {
+$('.btn_right_carousel_home2').click(function () { alert('jimm')
     owl_home2.trigger('next.owl.carousel');
 })
 // Go to the previous item
