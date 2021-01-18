@@ -537,6 +537,7 @@ footer {
     flex-direction : row;
     height         : 200px;
     align-items    : center;
+    background-color: teal;
 }
 
 .sub_container {
