@@ -533,6 +533,8 @@ footer {
 .block_title_trending {
     display        : flex;
     justify-content: flex-end;
+    flex-wrap      : wrap;
+    justify-content: space-around;
 }
 
 /*******/
