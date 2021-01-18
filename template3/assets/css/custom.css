@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 @font-face {
     font-family: thebold;
@@ -18,7 +18,7 @@ strong,
 span,
 input,
 li {
-    font-family: 'Gruppo', cursive !important;
+    font-family: 'Roboto Slab', serif !important;
 }
 
 button {
@@ -536,7 +536,7 @@ nav.disabled {
         padding-left : 0px;
     }
 
-   
+
 
 
     .element_to_down {
