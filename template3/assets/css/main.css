@@ -540,9 +540,9 @@ footer {
     background-color: teal;
 }
 
-.sub_container1 {
+.sub_container2{
     display           : flex;
-    align-items: flex-end;
+    justify-content   : flex-end;
     /* width          : 80%;*/
 }
 
