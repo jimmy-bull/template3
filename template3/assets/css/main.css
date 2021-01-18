@@ -538,6 +538,7 @@ footer {
     align-items    : center;
     height         : 200px;
     align-content  : space-around;
+    background-color: teal;
 }
 
 /*******/
