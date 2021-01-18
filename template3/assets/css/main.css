@@ -537,16 +537,17 @@ footer {
     height          : 200px;
     align-items     : center;
     background-color: teal;
+    justify-content: space-around;
 }
 
 .sub_container1{
     display           : flex;
-    justify-content   : flex-start;
+  
     /* width          : 80%;*/
 }
 .sub_container2{
     display           : flex;
-    justify-content   : flex-end;
+    
     /* width          : 80%;*/
 }
 
