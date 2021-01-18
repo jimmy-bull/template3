@@ -129,6 +129,7 @@ $(document).ready(function () {
         responsiveClass: true,
         navSpeed: 1000,
         dragEndSpeed: 1000,
+        stagePadding: 50,
         responsive: {
             0: {
                 items: 2,
