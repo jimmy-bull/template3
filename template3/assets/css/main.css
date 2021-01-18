@@ -583,7 +583,6 @@ footer {
     display        : flex;
     justify-content: center;
     align-items    : center;
-    justify-content: space-around;
 }
 
 .block_heart_home2 {
