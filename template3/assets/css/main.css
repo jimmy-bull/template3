@@ -589,6 +589,10 @@ footer {
     .hide_on_big {
         display: block;
     }
+
+    .sub_container {
+        justify-content: center;
+    }
 }
 
 .zoom_block_phone {
