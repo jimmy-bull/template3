@@ -132,7 +132,7 @@ $(document).ready(function () {
         stagePadding: 50,
         responsive: {
             0: {
-                items: 2,
+                items: 1,
                 nav: true
             },
             600: {
