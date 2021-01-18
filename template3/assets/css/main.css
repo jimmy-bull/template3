@@ -580,7 +580,7 @@ footer {
 .block_on_top_home2 {
     position: absolute;
     z-index : 1000;
-    top     : 50%;
+    top     : 40%;
     left    : 50%;
     display : flex;
 }
