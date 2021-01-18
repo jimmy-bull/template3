@@ -546,7 +546,7 @@ footer {
 }
 
 .sub_container1>div {
-    margin : 10px;
+    margin: 10px;
 }
 
 .sub_container2 {
@@ -554,11 +554,14 @@ footer {
 }
 
 .btn_left_carousel_home2 {
-    border-style : solid;
-    border-width : 1px;
-    height       : 50px;
-    width        : 50px;
-    border-radius: 50%;
+    border-style   : solid;
+    border-width   : 1px;
+    height         : 50px;
+    width          : 50px;
+    border-radius  : 50%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
 
 }
 
