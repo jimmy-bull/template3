@@ -593,6 +593,10 @@ footer {
     .sub_container {
         justify-content: center;
     }
+
+    .main_container {
+        height: 100px;
+    }
 }
 
 .zoom_block_phone {
