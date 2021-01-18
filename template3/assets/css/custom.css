@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Nanum+Myeongjo:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 
 @font-face {
     font-family: thebold;
@@ -18,8 +18,7 @@ strong,
 span,
 input,
 li {
-    font-family: 'Fraunces', serif;
-    font-family: 'Nanum Myeongjo', serif !important;
+    font-family: 'Spartan', sans-serif !important;
 }
 
 button {
