@@ -545,6 +545,11 @@ footer {
     justify-content: space-around;
 }
 
+.sub_container1>div {
+    margin : 10px;
+    padding: 20px;
+}
+
 .sub_container2 {
     display: flex;
 }
