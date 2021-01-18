@@ -532,7 +532,7 @@ footer {
 
 .main_container {
     display         : flex;
-    justify-content : center;
+    justify-content : flex-end;
     flex-wrap       : wrap;
     flex-direction  : row;
     height          : 200px;
@@ -540,8 +540,8 @@ footer {
 }
 
 .sub_container {
-    background-color: #01FF70;
-    width           : 80%;
+
+    width: 80%;
 }
 
 /*******/
