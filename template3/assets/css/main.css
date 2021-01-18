@@ -536,7 +536,8 @@ footer {
     flex-wrap      : wrap;
     flex-direction : row;
     align-items    : center;
-    height: 200px;
+    height         : 200px;
+    align-content  : space-around;
 }
 
 /*******/
