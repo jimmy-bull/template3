@@ -592,6 +592,7 @@ footer {
     width          : 50px;
     justify-content: center;
     align-items    : center;
+    display: flex;
 }
 
 /*******/
