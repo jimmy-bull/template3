@@ -128,6 +128,7 @@ $(document).ready(function () {
         margin: 10,
         responsiveClass: true,
         navSpeed: 1000,
+        dragEndSpeed: 1000,
         responsive: {
             0: {
                 items: 2,
