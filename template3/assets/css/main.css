@@ -532,7 +532,7 @@ footer {
 
 .main_container {
     display         : flex;
-    justify-content : flex-end;
+    justify-content : center;
     flex-wrap       : wrap;
     flex-direction  : row;
     height          : 200px;
