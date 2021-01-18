@@ -577,6 +577,11 @@ footer {
     cursor         : pointer;
 }
 
+.btn_left_carousel_home2:hover,
+.btn_right_carousel_home2:hover {
+    border-color: #01FF70;
+}
+
 /*******/
 
 
