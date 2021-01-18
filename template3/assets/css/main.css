@@ -534,6 +534,7 @@ footer {
     display        : flex;
     justify-content: flex-end;
     flex-wrap      : wrap;
+    flex-direction : row;
 }
 
 /*******/
