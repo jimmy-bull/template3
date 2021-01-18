@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Nanum+Myeongjo:wght@800&display=swap');
 
 @font-face {
     font-family: thebold;
@@ -19,6 +19,7 @@ span,
 input,
 li {
     font-family: 'Fraunces', serif;
+    font-family: 'Nanum Myeongjo', serif !important;
 }
 
 button {
@@ -536,7 +537,7 @@ nav.disabled {
         padding-left : 0px;
     }
 
-   
+
 
 
     .element_to_down {
