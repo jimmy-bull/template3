@@ -530,6 +530,11 @@ footer {
     opacity  : 1;
 }
 
+.block_title_trending {
+    display        : flex;
+    justify-content: flex-end;
+}
+
 /*******/
 
 
