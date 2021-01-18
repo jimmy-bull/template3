@@ -122,7 +122,9 @@ $('.close_main_menu').click(function (e) {
     enableScrollOnBody();
 })
 
-
+$(document).ready(function () {
+    $(".owl_home2").owlCarousel();
+});
 
 
 
