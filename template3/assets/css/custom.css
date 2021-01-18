@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 @font-face {
     font-family: thebold;
@@ -18,7 +18,7 @@ strong,
 span,
 input,
 li {
-    font-family: 'Spartan', sans-serif !important;
+    font-family: 'IBM Plex Mono', monospace !important;
 }
 
 button {
