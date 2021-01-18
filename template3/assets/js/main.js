@@ -143,20 +143,22 @@ $(document).ready(function () {
             }
         }
     });
+
+    let owl_home2 = $('.owl_home2');
+    owl_home2.owlCarousel();
+    // Go to the next item
+    $('.btn_right_carousel_home2').click(function () {
+        alert('jimm')
+        owl_home2.trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('.btn_left_carousel_home2').click(function () {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl_home2.trigger('prev.owl.carousel', [300]);
+    })
 });
 
-var owl_home2 = $('.owl_home2');
-owl_home2.owlCarousel();
-// Go to the next item
-$('.btn_right_carousel_home2').click(function () { alert('jimm')
-    owl_home2.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('.btn_left_carousel_home2').click(function () {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl_home2.trigger('prev.owl.carousel', [300]);
-})
 
 
 
