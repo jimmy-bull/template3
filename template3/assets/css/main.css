@@ -531,18 +531,18 @@ footer {
 }
 
 .main_container {
-    display        : flex;
-    justify-content: center;
-    flex-wrap      : wrap;
-    flex-direction : row;
-    height         : 200px;
-    align-items    : center;
+    display         : flex;
+    justify-content : center;
+    flex-wrap       : wrap;
+    flex-direction  : row;
+    height          : 200px;
+    align-items     : center;
     background-color: teal;
 }
 
 .sub_container {
-    display        : flex;
-    width          : 80%;
+    display           : flex;
+    /* width          : 80%;*/
 }
 
 /*******/
