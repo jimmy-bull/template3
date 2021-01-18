@@ -578,10 +578,11 @@ footer {
 }
 
 .block_on_top_home2 {
-    position: absolute;
-    z-index : 1000;
-    top     : 50%;
-    left    : 50%;
+    position       : absolute;
+    z-index        : 1000;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
 }
 
 .block_heart_home2 {
