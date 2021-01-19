@@ -612,6 +612,11 @@ footer {
     margin-left     : 2%;
 }
 
+.block_after_carousel_home2 {
+    display: flex;
+    justify-content: center;
+}
+
 /*******/
 
 
