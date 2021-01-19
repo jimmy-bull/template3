@@ -625,6 +625,12 @@ footer {
 
 }
 
+.img_why_choose {
+    width     : 450px;
+    height    : 600px;
+    object-fit: contain;
+}
+
 /*******/
 
 
