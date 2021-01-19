@@ -650,8 +650,7 @@ footer {
         background-size  : cover;
         background-repeat: no-repeat;
         color            : white;
-        justify-content  : center;
-        display          : flex;
+        text-align       : center;
     }
 
 }
