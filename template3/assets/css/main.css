@@ -632,27 +632,29 @@ footer {
 }
 
 .btn_left_carousel2_home2 {
-    border-style   : solid;
-    border-width   : 1px;
-    height         : 50px;
-    width          : 50px;
-    border-radius  : 50%;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    cursor         : pointer;
+    border-style    : solid;
+    border-width    : 1px;
+    height          : 50px;
+    width           : 50px;
+    border-radius   : 50%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    cursor          : pointer;
+    background-color: white;
 }
 
 .btn_right_carousel2_home2 {
-    border-style   : solid;
-    border-width   : 1px;
-    height         : 50px;
-    width          : 50px;
-    border-radius  : 50%;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    cursor         : pointer;
+    border-style    : solid;
+    border-width    : 1px;
+    height          : 50px;
+    width           : 50px;
+    border-radius   : 50%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    cursor          : pointer;
+    background-color: white;
 }
 
 .btn_left_carousel2_home2:hover,
