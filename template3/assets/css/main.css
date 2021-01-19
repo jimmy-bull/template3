@@ -616,11 +616,12 @@ footer {
     display        : flex;
     justify-content: center;
     margin-top     : 15vh;
+    width          : 80%;
 }
 
 .block_after_carousel_home2>div {
     margin: 10px;
-    width : 80%;
+
 }
 
 /*******/
