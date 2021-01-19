@@ -615,7 +615,7 @@ footer {
 .block_after_carousel_home2 {
     display        : flex;
     justify-content: center;
-    margin-top     : 10vh;
+    margin-top     : 5vh;
     flex-wrap      : wrap;
     height         : 600px;
 }
