@@ -796,6 +796,14 @@ footer {
     .main_container {
         height: 100px;
     }
+
+    .parent_of_controller_carousel21_home2 {
+        display: none;
+    }
+
+    .parent_of_controller_carousel22_home2 {
+        display: none;
+    }
 }
 
 .zoom_block_phone {
