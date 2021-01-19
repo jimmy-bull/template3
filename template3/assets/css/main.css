@@ -629,6 +629,7 @@ footer {
     background-color: #f1f1f1;
     margin-top      : 50px;
     padding         : 50px;
+    position        : relative;
 }
 
 .btn_left_carousel2_home2 {
@@ -798,15 +799,19 @@ footer {
     }
 
     .parent_of_controller_carousel21_home2 {
-        position: absolute;
-        left    : 0;
-        top     : 50%;
+        position     : absolute;
+        left         : 0;
+        top          : 50%;
+        -ms-transform: translateY(-50%);
+        transform    : translateY(-50%);
     }
 
     .parent_of_controller_carousel22_home2 {
-        position: absolute;
-        right   : 0;
-        top     : 50%;
+        position     : absolute;
+        right        : 0;
+        top          : 50%;
+        -ms-transform: translateY(-50%);
+        transform    : translateY(-50%);
     }
 }
 
