@@ -666,7 +666,13 @@ footer {
     border-color: #01FF70;
 }
 
-.parent_of_controller_carousel2_home2 {
+.parent_of_controller_carousel21_home2 {
+    display      : flex;
+    align-items  : center;
+    padding-right: 10%;
+}
+
+.parent_of_controller_carousel22_home2 {
     padding-left: 10%;
     display     : flex;
     align-items : center;
