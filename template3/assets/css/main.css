@@ -666,6 +666,12 @@ footer {
     border-color: #01FF70;
 }
 
+.parent_of_controller_carousel2_home2 {
+    padding-left: 10%;
+    display     : flex;
+    align-items : center;
+}
+
 @media screen and (min-width: 992px) {
     .block_after_carousel_home2 {
         height         : 600px;
