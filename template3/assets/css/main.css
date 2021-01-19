@@ -625,15 +625,18 @@ footer {
 
 }
 
-.img_why_choose {
-    width     : 450px;
-    height    : 600px;
-    object-fit: contain;
+@media screen and (max-width: 992px) {
+    .img_why_choose {
+        width     : 450px;
+        height    : 600px;
+        object-fit: contain;
+    }
+
+    .main_block_text_why_choose {
+        width: 40%;
+    }
 }
 
-.main_block_text_why_choose {
-    width: 40%;
-}
 
 /*******/
 
@@ -785,5 +788,7 @@ footer {
     .zoom_block {
         display: none;
     }
+
+
 
 }
