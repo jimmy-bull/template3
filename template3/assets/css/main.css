@@ -605,11 +605,11 @@ footer {
     height          : 50px;
     width           : 50px;
     justify-content : center;
-    align-items     : center;
     display         : flex;
     background-color: #01FF70;
     box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
     margin-left     : 2%;
+    align-items     : stretch;
 }
 
 .block_after_carousel_home2 {
