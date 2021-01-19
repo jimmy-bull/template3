@@ -613,10 +613,13 @@ footer {
 }
 
 .block_after_carousel_home2 {
-    display: flex;
-  
-    margin-top: 15vh;
-    justify-content: space-around;
+    display        : flex;
+    justify-content: center;
+    margin-top     : 15vh;
+}
+
+.block_after_carousel_home2>div {
+    margin: 10px;
 }
 
 /*******/
