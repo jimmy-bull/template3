@@ -613,10 +613,9 @@ footer {
 }
 
 .block_after_carousel_home2 {
-    display        : flex;
-    justify-content: center;
-    margin-top     : 20px;
-    flex-wrap      : wrap;
+    display   : flex;
+    margin-top: 20px;
+    flex-wrap : wrap;
 }
 
 .block_after_carousel_home2>div {
@@ -626,7 +625,8 @@ footer {
 
 @media screen and (min-width: 992px) {
     .block_after_carousel_home2 {
-        height: 600px;
+        height         : 600px;
+        justify-content: center;
     }
 
     .img_why_choose {
