@@ -614,7 +614,7 @@ footer {
 
 .block_after_carousel_home2 {
     display: flex;
-    justify-content: center;
+  
     margin-top: 15vh;
     justify-content: space-around;
 }
