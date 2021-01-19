@@ -618,6 +618,7 @@ footer {
     margin-top     : 10vh;
     flex-wrap      : wrap;
     max-height: 400px;
+    margin-bottom     : 10vh;
 }
 
 .block_after_carousel_home2>div {
