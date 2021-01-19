@@ -678,6 +678,14 @@ footer {
     align-items : center;
 }
 
+.main_carousel2_block_home2 {
+    flex-basis : 40%;
+    padding    : 10px;
+    text-align : center;
+    display    : flex;
+    align-items: center;
+}
+
 @media screen and (min-width: 992px) {
     .block_after_carousel_home2 {
         height         : 600px;
