@@ -646,7 +646,7 @@ footer {
     }
 
     .main_block_text_why_choose {
-        background-image : url('https://images.pexels.com/photos/2048548/pexels-photo-2048548.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+        background-image : url('https://images.pexels.com/photos/2529159/pexels-photo-2529159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
         background-size  : cover;
         background-repeat: no-repeat;
         color            : white;
@@ -655,9 +655,7 @@ footer {
         font-weight      : bold;
     }
 
-    .txt_sub_why_choose {
-        font-size: 5vw;
-    }
+    .txt_sub_why_choose {}
 
 }
 
