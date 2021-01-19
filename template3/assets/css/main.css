@@ -642,6 +642,8 @@ footer {
     align-items     : center;
     cursor          : pointer;
     background-color: white;
+    border-color    : white;
+    box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
 }
 
 .btn_right_carousel2_home2 {
@@ -655,6 +657,8 @@ footer {
     align-items     : center;
     cursor          : pointer;
     background-color: white;
+    border-color    : white;
+    box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
 }
 
 .btn_left_carousel2_home2:hover,
