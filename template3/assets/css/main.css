@@ -655,7 +655,9 @@ footer {
         font-weight      : bold;
     }
 
-    .txt_sub_why_choose {}
+    .to_delete_on_small {
+        display: none;
+    }
 
 }
 
