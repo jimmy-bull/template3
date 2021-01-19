@@ -623,6 +623,11 @@ footer {
 
 }
 
+.bock_for_carsousel_comment {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width: 992px) {
     .block_after_carousel_home2 {
         height         : 600px;
