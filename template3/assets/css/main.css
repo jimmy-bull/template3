@@ -616,6 +616,7 @@ footer {
     display        : flex;
     justify-content: center;
     margin-top     : 15vh;
+    flex-wrap      : nowrap;
 }
 
 .block_after_carousel_home2>div {
