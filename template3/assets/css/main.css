@@ -647,7 +647,7 @@ footer {
 
     .main_block_text_why_choose {
         background-image : url('https://images.pexels.com/photos/2048548/pexels-photo-2048548.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
-        background-size  : contain;
+        background-size  : cover;
         background-repeat: no-repeat;
         color            : white;
         text-align       : center;
@@ -657,6 +657,10 @@ footer {
 
     .to_delete_on_small {
         display: none;
+    }
+
+    .txt_sub_why_choose {
+        color: black;
     }
 
 }
