@@ -505,7 +505,7 @@ nav.disabled {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:  992px) {
     .txt_right_nav_big_carou1 {
         display: none;
     }
