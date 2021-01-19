@@ -702,17 +702,7 @@ footer {
         width: 40%;
     }
 
-    .parent_of_controller_carousel21_home2 {
-        padding-right: 20%;
-    }
 
-    .parent_of_controller_carousel22_home2 {
-        padding-left: 20%;
-    }
-
-    .main_carousel2_block_home2 {
-        flex-basis: 60%;
-    }
 }
 
 @media screen and (max-width: 992px) {
@@ -737,6 +727,18 @@ footer {
     .txt_sub_why_choose {
         font-weight: bolder;
         font-size  : 5wv;
+    }
+
+    .parent_of_controller_carousel21_home2 {
+        padding-right: 20%;
+    }
+
+    .parent_of_controller_carousel22_home2 {
+        padding-left: 20%;
+    }
+
+    .main_carousel2_block_home2 {
+        flex-basis: 60%;
     }
 
 }
