@@ -661,7 +661,7 @@ footer {
 
     .txt_sub_why_choose {
         font-weight: bolder;
-        font-size: 5wv;
+        font-size  : 5wv;
     }
 
 }
@@ -745,7 +745,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .txt_color_shows {
         display: block;
     }
