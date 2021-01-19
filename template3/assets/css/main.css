@@ -798,11 +798,13 @@ footer {
     }
 
     .parent_of_controller_carousel21_home2 {
-        margin-right: 10px;
+        position: absolute;
+        left    : 0;
     }
 
     .parent_of_controller_carousel22_home2 {
-        margin-left: 10px;
+        position: absolute;
+        right   : 0;
     }
 }
 
