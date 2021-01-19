@@ -660,7 +660,8 @@ footer {
     }
 
     .txt_sub_why_choose {
-        color: black;
+        color      : teal;
+        font-weight: 5vw;
     }
 
 }
