@@ -48,6 +48,31 @@ $(document).ready(function () {
         }
     })
 
+
+    $('.owl-carousel_comment_client_home2').owlCarousel({
+        loop: true,
+        margin: 5,
+        responsiveClass: true,
+        touchDrag: true,
+        mouseDrag: true,
+        navSpeed: 1000,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 1,
+                nav: false
+            },
+            1000: {
+                items: 1,
+                nav: true,
+                loop: false
+            }
+        }
+    })
+
     $('.carou_responsive_div').children("div.owl-nav").children("button").addClass('btn_carou_responsive_div');// ADD btn_carou_responsive_div TO THE BUTTON OF THE CUREENT CAROUSEL
     $('.carou_responsive_div').children("div.owl-nav").addClass('owl-nav-carou_responsive_div');
     $('.carou_responsive_div').children("div.owl-dots").addClass('owl-dots-carou_responsive_div');
