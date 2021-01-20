@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @font-face {
@@ -22,7 +23,7 @@ li {
 }
 
 button {
-    font-family: thebold !important;
+    font-family: 'Lato', sans-serif !important;
 }
 
 body,
