@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 @font-face {
     font-family: thebold;
@@ -18,7 +18,7 @@ strong,
 span,
 input,
 li {
-    font-family: 'Slabo 27px', serif !important;
+    font-family: 'Lato', sans-serif !important;
 }
 
 button {
