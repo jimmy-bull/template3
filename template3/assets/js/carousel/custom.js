@@ -49,22 +49,6 @@ $(document).ready(function () {
     })
 
 
-    $('.owl-carousel_comment_client_home2').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
-    })
 
     $('.carou_responsive_div').children("div.owl-nav").children("button").addClass('btn_carou_responsive_div');// ADD btn_carou_responsive_div TO THE BUTTON OF THE CUREENT CAROUSEL
     $('.carou_responsive_div').children("div.owl-nav").addClass('owl-nav-carou_responsive_div');
