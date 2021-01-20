@@ -29,6 +29,15 @@ body {
     padding: 20px;
 }
 
+.block_link_with_logo_home3 {
+    display: flex;
+}
+
+.block_link_with_logo_home3>a {
+    margin : 10px;
+    padding: 20px;
+}
+
 img {
     height: 100%;
     width : 100%;
