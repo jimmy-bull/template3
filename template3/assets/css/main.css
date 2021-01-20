@@ -681,7 +681,7 @@ footer {
     flex-basis : 40%;
     padding    : 10px;
     text-align : center;
-    display    : flex;
+   
     align-items: center;
 }
 
