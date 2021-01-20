@@ -10,3 +10,7 @@ nav {
     justify-content: center;
     align-items    : center;
 }
+
+.block_link_no_logo_home3 {
+    display: flex;
+}
