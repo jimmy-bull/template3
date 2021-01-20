@@ -713,7 +713,7 @@ footer {
         position: absolute;
         z-index : 1000;
         top     : 30%;
-        left    : 30%;
+        left    : 25%;
         display : flex;
     }
 }
