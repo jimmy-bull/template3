@@ -39,6 +39,8 @@ body {
 
 .logo_block_home3 {
     padding: 10px;
+    height: 100%;
+    width: 100%;
 }
 
 .logo_block_home3>img {
