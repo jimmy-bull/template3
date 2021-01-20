@@ -626,7 +626,6 @@ footer {
 .bock_for_carsousel_comment {
     display         : flex;
     justify-content : center;
-    background-color: #f1f1f1;
     margin-top      : 50px;
     padding         : 50px;
     position        : relative;
