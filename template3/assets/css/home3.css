@@ -6,9 +6,10 @@ body {
 }
 
 nav {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    background-color: red;
 }
 
 .block_link_no_logo_home3 {
