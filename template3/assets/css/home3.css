@@ -39,7 +39,7 @@ body {
 }
 
 img {
-    height    : 100%;
-    width     : 100%;
+   
     object-fit: contain;
+    flex-basis: 200px;
 }
