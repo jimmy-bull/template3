@@ -1,5 +1,6 @@
 /********* THIS THE CSS FOR THE HOME 3 PAGE ONLY AND
  I'M USING A LOT OF FLEX BOX ON THIS PAGE THERE WILL BE A MINIMAL OF BOOTSTRAP*/
 body {
-    background-color: red !important;
+    margin : 0;
+    padding: 0;
 }
