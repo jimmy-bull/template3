@@ -5,14 +5,14 @@ body {
     padding: 0;
 }
 
-nav {
+.nav {
     display        : flex;
     justify-content: center;
     align-items    : center;
 }
 
 
-.nav {
+.nav>div {
     margin : 10px;
     padding: 20px;
 }
