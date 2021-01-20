@@ -24,6 +24,19 @@ function scrollFunction() {
         $('.my_nav_link').css({
             'color': "black",
         });
+        //For Menu on Home2 Page
+        $(".home2_nav").fadeIn("slow");
+        $('.home2_nav').css({
+            'position': "fixed",
+            "z-index": "1000000000000000",
+            "background-color": "#fff",
+            "boxShadow": "0 10px 15px rgba(25, 25, 25, 0.1)",
+            "animation": "fadeInDown",
+            "animation-duration": "0.5s",
+            'padding-bottom': "35px"
+        });
+
+
         $('#search_icons_on_scroll').show();
     } else {
         mybutton.style.display = "none";
