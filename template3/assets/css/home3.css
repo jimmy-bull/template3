@@ -37,8 +37,11 @@ body {
     padding: 10px;
 }
 
-img {
-    height : 100%;
-    width  : 100%;
+.logo_block_home3 {
     padding: 10px;
+}
+
+.logo_block_home3>img {
+    height: 100%;
+    width : 100%;
 }
