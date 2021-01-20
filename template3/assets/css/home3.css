@@ -39,9 +39,11 @@ body {
 
 .logo_block_home3 {
     padding: 10px;
+    height: 100px;
 }
 
 .logo_block_home3>img {
     height: 100%;
     width : 100%;
+    min-height: 0;
 }
