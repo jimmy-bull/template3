@@ -35,6 +35,8 @@ function scrollFunction() {
             "animation-duration": "0.5s",
             'padding-bottom': "35px"
         });
+        $('.txt_search_home2').removeClass('col-lg-4')
+        $('.txt_search_home2').addClass('col-lg-12')
 
 
         $('#search_icons_on_scroll').show();
@@ -50,6 +52,9 @@ function scrollFunction() {
         $('.my_nav_link').css({
             'color': "white",
         });
+        //For Menu on Home2 Page
+        $('.txt_search_home2').removeClass('col-lg-12')
+        $('.txt_search_home2').addClass('col-lg-4')
         $('#search_icons_on_scroll').hide();
     }
 }
