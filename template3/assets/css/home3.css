@@ -41,7 +41,7 @@ body {
     padding: 10px;
 }
 
-.logo_block_home3 div>img {
+.logo_block_home3>img {
     height: 100%;
     width : 100%;
 }
