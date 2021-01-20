@@ -36,7 +36,7 @@ function scrollFunction() {
             'padding-bottom': "35px"
         });
         $('.txt_search_home2').removeClass('col-lg-4')
-        $('.txt_search_home2').addClass('col-lg-12')
+        $('.txt_search_home2').addClass('col-lg-10')
 
 
         $('#search_icons_on_scroll').show();
