@@ -708,6 +708,14 @@ footer {
     .to_reduce_280 {
         font-size: 15px;
     }
+
+    .block_on_top_home2 {
+        position: absolute;
+        z-index : 1000;
+        top     : 30%;
+        left    : 30%;
+        display : flex;
+    }
 }
 
 @media screen and (max-width: 992px) {
