@@ -66,7 +66,7 @@ $(document).ready(function () {
                 nav: false
             },
             1000: {
-                items: 1,
+                items: 3,
                 nav: true,
                 loop: false
             }
