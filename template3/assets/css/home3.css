@@ -19,6 +19,7 @@ body {
     margin        : 0 3% 0% 3%;
     text-transform: uppercase;
     font-weight   : bolder;
+    font-family   : thebold;
 }
 
 .block_link_with_logo_home3>a {
