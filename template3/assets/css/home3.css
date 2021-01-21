@@ -28,19 +28,22 @@ body {
 }
 
 .block_link_with_logo_home3 {
-    display        : flex;
-    width          : 23%;
-    justify-content: flex-end;
+    display         : flex;
+    width           : 23%;
+    justify-content : flex-end;
+    background-color: green;
 }
 
 .block_link_no_logo_home3 {
-    display        : flex;
-    width          : 43%;
-    justify-content: flex-end;
+    display         : flex;
+    width           : 43%;
+    justify-content : flex-end;
+    background-color: red;
 }
 
 .logo_block_home3 {
-    width: 13%;
+    width           : 13%;
+    background-color: teal;
 }
 
 .show_on_tablette {
