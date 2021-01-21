@@ -48,7 +48,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:1024px) {
     .block_link_with_logo_home3 {
         width: 50%;
     }
