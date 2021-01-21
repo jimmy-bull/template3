@@ -46,7 +46,6 @@ body {
 }
 
 .logo_block_home3>img {
-    width     : 10vw;
     min-height: 0;
 }
 
@@ -54,5 +53,5 @@ body {
     .block_link_no_logo_home3 {
         display: none;
     }
-    
+       
 }
