@@ -49,8 +49,8 @@ body {
 }
 
 .fa-angle-down {
-    font-weight: 10px;
-    margin-left: 1px;
+    font-size: 10px;
+    margin-left: 5px;
 }
 
 @media screen and (max-width:1024px) {
