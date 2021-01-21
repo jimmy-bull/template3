@@ -13,13 +13,6 @@ body {
     justify-content: space-around;
 }
 
-/**
- * Images a now responsive
- */
-img {
-    max-width: 100%;
-    height   : auto;
-}
 
 
 
