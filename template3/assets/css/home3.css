@@ -54,7 +54,7 @@ body {
     margin-left: 2px;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
     .block_link_with_logo_home3 {
         width: 50%;
     }
