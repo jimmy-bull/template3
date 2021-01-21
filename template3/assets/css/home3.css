@@ -41,22 +41,24 @@ body {
 }
 
 .logo_block_home3 {
-    padding         : 10px;
-    display         : flex;
-    align-items     : center;
-    background-color: red;
+    padding            : 10px;
+    display            : flex;
+    align-items        : center;
+    background         : url('https://static.zarahome.net/8/static4/itxwebstandard/images/logos/logo.svg?20210106023001');
+    background-position: center;
+    background-repeat  : no-repeat;
 }
 
-.logo_block_home3>img {
+/*.logo_block_home3>img {
     min-height: 0;
-    width: 100px;
-}
+    width     : 100px;
+}*/
 
 @media screen and (max-width: 992px) {
     .block_link_no_logo_home3 {
         display: none;
     }
-    
-    
+
+
 
 }
