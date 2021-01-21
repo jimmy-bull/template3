@@ -31,8 +31,7 @@ body {
 }
 
 .block_link_with_logo_home3 {
-    display         : flex;
-    background-color: green;
+    display: flex;
 }
 
 .block_link_with_logo_home3>a {
@@ -63,6 +62,6 @@ body {
 
 @media screen and (max-width: 576px) {
     .logo_block_home3 {
-        width: 50%;
+        width: 100%;
     }
 }
