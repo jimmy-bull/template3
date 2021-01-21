@@ -31,7 +31,8 @@ body {
 }
 
 .block_link_with_logo_home3 {
-    display: flex;
+    display        : flex;
+    justify-content: flex-end;
 }
 
 .block_link_with_logo_home3>a {
