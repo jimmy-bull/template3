@@ -8,6 +8,8 @@ body {
     width  : 100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .navette {
     display        : flex;
     justify-content: space-around;
@@ -19,7 +21,7 @@ body {
     margin        : 0 3% 0% 3%;
     text-transform: uppercase;
     font-weight   : bolder;
-    font-family   : thebold;
+    font-family   : 'Lato', sans-serif;
 }
 
 .block_link_with_logo_home3>a {
