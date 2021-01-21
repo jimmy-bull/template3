@@ -13,6 +13,15 @@ body {
     justify-content: space-around;
 }
 
+/**
+ * Images a now responsive
+ */
+img {
+    max-width: 100%;
+    height   : auto;
+}
+
+
 
 .navette>div {
     margin : 20px;
@@ -29,7 +38,7 @@ body {
 }
 
 .block_link_with_logo_home3 {
-    display: flex;
+    display         : flex;
     background-color: green;
 }
 
@@ -39,9 +48,9 @@ body {
 }
 
 .logo_block_home3 {
-    padding    : 10px;
-    display    : flex;
-    align-items: center;
+    padding         : 10px;
+    display         : flex;
+    align-items     : center;
     background-color: red;
 }
 
@@ -53,5 +62,5 @@ body {
     .block_link_no_logo_home3 {
         display: none;
     }
-       
+
 }
