@@ -48,8 +48,9 @@ body {
 
 .logo_block_home3>img {
     min-height: 0;
-    width     : 100%;
+    width     : 100px;
 }
+
 .show_on_tablette {
     display: none;
 }
