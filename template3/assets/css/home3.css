@@ -14,5 +14,16 @@ body {
     flex-wrap      : wrap;
 }
 
+.block_link_no_logo_home {
+    display        : flex;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+}
+
+.block_link_with_logo_home3 {
+    display        : flex;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+}
 
 /**/
