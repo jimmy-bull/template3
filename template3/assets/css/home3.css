@@ -25,11 +25,13 @@ body {
 .block_link_with_logo_home3 {
     background-color: red;
     display         : flex;
+    width: 33%;
 }
 
 .block_link_no_logo_home3 {
     background-color: green;
     display         : flex;
+    width: 33%;
 }
 
 /**/
