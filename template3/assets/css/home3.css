@@ -32,7 +32,8 @@ body {
 .block_link_no_logo_home3 {
     background-color: green;
     display         : flex;
-    width           : 33%;
+    width           : 43%;
+    justify-content : center;
 }
 
 .logo_block_home3 {
