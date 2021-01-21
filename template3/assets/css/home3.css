@@ -52,7 +52,7 @@ img {
     display         : flex;
     align-items     : center;
     background-color: red;
-    width: 30%;
+    width: 10%;
 }
 
 .logo_block_home3>img {
@@ -64,5 +64,9 @@ img {
     .block_link_no_logo_home3 {
         display: none;
     }
+    .logo_block_home3 {
+        width: 100%;
+    }
+    
 
 }
