@@ -15,11 +15,26 @@ body {
 }
 
 
+
+
+.navette>div {
+    margin : 20px;
+    padding: 0px 30px 0px 30px;
+}
+
+.block_link_no_logo_home3 {
+    display: flex;
+}
+
 .block_link_no_logo_home3>a {
     margin : 5px 10px 5px 10px;
     padding: 10px;
 }
 
+.block_link_with_logo_home3 {
+    display        : flex;
+    justify-content: flex-end;
+}
 
 .block_link_with_logo_home3>a {
     margin : 5px;
@@ -27,11 +42,14 @@ body {
 }
 
 .logo_block_home3 {
-    padding: 10px;
+    padding    : 10px;
+    display    : flex;
+    align-items: center;
 }
 
 .logo_block_home3>img {
     min-height: 0;
+    width     : 100%;
 }
 
 .show_on_tablette {
@@ -48,6 +66,14 @@ body {
     }
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .logo_block_home3 {
+        width: 50%;
+    }
+
+    .block_link_with_logo_home3 {
+        width: 50%;
+    }
+}
 
 /**/
