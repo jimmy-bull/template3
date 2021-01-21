@@ -30,6 +30,7 @@ body {
 
 .block_link_with_logo_home3 {
     display: flex;
+    background-color: green;
 }
 
 .block_link_with_logo_home3>a {
@@ -42,6 +43,7 @@ body {
     width      : 20%;
     display    : flex;
     align-items: center;
+    background-color: red;
 }
 
 .logo_block_home3>img {
