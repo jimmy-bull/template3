@@ -57,6 +57,10 @@ body {
         display: none;
     }
 
+    .logo_block_home3 {
+        width: 18%;
+    }
+
     .show_on_tablette {
         display: block;
     }
