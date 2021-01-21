@@ -47,8 +47,10 @@ body {
 .show_on_tablette {
     display: none;
 }
-.fa-angle-down{
-    font-weight: 15px;
+
+.fa-angle-down {
+    font-weight: 10px;
+    margin-left: 1px;
 }
 
 @media screen and (max-width:1024px) {
