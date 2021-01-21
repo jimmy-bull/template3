@@ -68,11 +68,13 @@ body {
 
 @media screen and (max-width: 576px) {
     .logo_block_home3 {
-        width: 50%;
+        width           : 50%;
+        background-color: red;
     }
 
     .block_link_with_logo_home3 {
-        width: 30%;
+        width           : 30%;
+        background-color: green;
     }
 }
 
