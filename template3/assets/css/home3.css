@@ -30,13 +30,13 @@ body {
 
 .block_link_with_logo_home3 {
     display        : flex;
-    width          : 23%;
+    width          : 20%;
     justify-content: flex-end;
 }
 
 .block_link_no_logo_home3 {
     display        : flex;
-    width          : 54%;
+    width          : 57%;
     justify-content: flex-end;
     flex-wrap      : wrap;
 }
