@@ -52,11 +52,12 @@ img {
     display         : flex;
     align-items     : center;
     background-color: red;
+    width: 30%;
 }
 
 .logo_block_home3>img {
     min-height: 0;
-    width: 30%;
+    width: 100%;
 }
 
 @media screen and (max-width: 992px) {
