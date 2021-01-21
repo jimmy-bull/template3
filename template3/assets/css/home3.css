@@ -53,10 +53,17 @@ body {
     min-height: 0;
     width     : 100px;
 }*/
+.show_on_tablette {
+    display: none;
+}
 
 @media screen and (max-width: 992px) {
     .block_link_no_logo_home3 {
         display: none;
+    }
+
+    .show_on_tablette {
+        display: block;
     }
 }
 
@@ -65,3 +72,5 @@ body {
         width: 100%;
     }
 }
+
+/**/
