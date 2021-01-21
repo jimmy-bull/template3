@@ -47,7 +47,7 @@ body {
     background         : url('https://static.zarahome.net/8/static4/itxwebstandard/images/logos/logo.svg?20210106023001');
     background-position: center;
     background-repeat  : no-repeat;
-    width: 15%;
+    width              : 15%;
 }
 
 /*.logo_block_home3>img {
@@ -59,7 +59,10 @@ body {
     .block_link_no_logo_home3 {
         display: none;
     }
+}
 
-
-
+@media screen and (max-width: 576px) {
+    .logo_block_home3 {
+        width: 15%;
+    }
 }
