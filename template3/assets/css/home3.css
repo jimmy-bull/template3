@@ -57,4 +57,9 @@ body {
     .logo_block_home3 {
         width      : 50%;
     }
+    .logo_block_home3>img {
+        width     : 20vw;
+        min-height: 0;
+    }
+    
 }
