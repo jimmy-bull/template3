@@ -39,6 +39,7 @@ body {
     width           : 54%;
     justify-content : flex-end;
     background-color: red;
+    flex-wrap       : wrap;
 }
 
 .logo_block_home3 {
