@@ -12,7 +12,7 @@ body {
     display        : flex;
     justify-content: space-around;
     flex-wrap      : wrap;
-    padding        : 15px 0px 15px 0px;
+    padding        : 20px 0px 20px 0px;
 }
 
 .block_link_no_logo_home3>a {
