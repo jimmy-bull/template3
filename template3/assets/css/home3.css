@@ -30,6 +30,7 @@ body {
 
 .block_link_with_logo_home3 {
     display: flex;
+    display: none;
 }
 
 .block_link_with_logo_home3>a {
