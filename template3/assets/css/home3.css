@@ -179,7 +179,7 @@ li {
 .block_apple_watch {
     background-image   : url('../img/sportwatch.png');
     background-position: right;
-    background-size    : contain;
+    background-size    : 30%;
     background-repeat  : no-repeat;
     background-color   : #f2f2f0;
 }
