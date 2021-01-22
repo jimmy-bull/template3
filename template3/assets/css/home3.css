@@ -104,7 +104,9 @@ body {
 }
 
 .block_image_explore_after_menuu_home3 {
-    width: 30%;
+    width          : 30%;
+    display        : flex;
+    justify-content: space-between;
 }
 
 .txtbloc_after_menuu_home3 {
