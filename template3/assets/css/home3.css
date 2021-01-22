@@ -144,6 +144,12 @@ li {
     transition: ease-in-out box-shadow 1s;
 }
 
+.block_for_price_heart_home3 {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+}
+
 /**/
 
 
