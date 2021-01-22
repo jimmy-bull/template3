@@ -209,7 +209,13 @@ li {
     }
 
     .shop_his_hers>div {
-        width : 45%;
+        width: 45%;
+    }
+}
+
+@media screen and (width:768px) {
+    .shop_his_hers>div {
+        height: 300px;
     }
 }
 
@@ -225,8 +231,9 @@ li {
     .txt_title_grid_home3 {
         font-size: 10px;
     }
+
     .shop_his_hers>div {
-        width : 100%;
+        width     : 100%;
         margin-top: 20px;
     }
 }
