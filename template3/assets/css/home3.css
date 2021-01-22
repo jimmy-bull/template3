@@ -154,12 +154,12 @@ li {
     }
 
     .block_trending>div {
-        width: 150px;
+        width: 200px;
     }
 
     .img_trendind {
-        width     : 150px;
-        height    : 150px;
+        width     : 200px;
+        height    : 200px;
         object-fit: contain;
     }
 
