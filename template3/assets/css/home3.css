@@ -87,6 +87,7 @@ body {
     background-position: left;
     background-size    : cover;
     height             : 500px;
+    background-repeat: no-repeat;
 }
 
 .block_image_explore_after_menuu_home3 {
