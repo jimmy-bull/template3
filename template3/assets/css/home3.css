@@ -83,7 +83,8 @@ body {
 /**block after menu***/
 
 .first_block_after_menu_home3 {
-    display: flex;
+    display         : flex;
+    background-color: #f1f1f3;
 }
 
 .block_image_explore_after_menuu_home3 {
