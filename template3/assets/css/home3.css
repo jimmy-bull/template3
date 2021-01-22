@@ -87,8 +87,12 @@ body {
     justify-content: center;
 }
 
+.block_trending>div {
+    width: 200px;
+}
+
 .img_trendind {
-    width: 300px;
+    width: 100%;
 }
 
 /**/
