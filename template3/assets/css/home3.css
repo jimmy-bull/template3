@@ -208,7 +208,9 @@ li {
         width: 60%;
     }
 
-    
+    .shop_his_hers>div {
+        width : 70%;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -222,5 +224,8 @@ li {
 
     .txt_title_grid_home3 {
         font-size: 10px;
+    }
+    .shop_his_hers>div {
+        width : 100%;
     }
 }
