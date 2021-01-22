@@ -1,0 +1,115 @@
+/********* THIS THE CSS FOR THE HOME 3 PAGE ONLY AND
+ I'M USING A LOT OF FLEX BOX ON THIS PAGE THERE WILL BE A MINIMAL OF BOOTSTRAP*/
+html,
+body {
+    margin : 0;
+    padding: 0;
+    height : 100%;
+    width  : 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+/*MENU*/
+.navette {
+    display         : flex;
+    justify-content : center;
+    flex-wrap       : wrap;
+    padding         : 20px 0px 20px 0px;
+    background-color: #f1f1f3;
+}
+
+.block_link_no_logo_home3>a {
+    margin        : 0 3% 0% 3%;
+    text-transform: uppercase;
+    font-family   : 'Lato', sans-serif !important;
+    font-size     : 14px;
+}
+
+.block_link_with_logo_home3>a {
+    margin: 0 5% 0% 5%;
+}
+
+.block_link_with_logo_home3 {
+    display        : flex;
+    width          : 20%;
+    justify-content: flex-end;
+}
+
+.block_link_no_logo_home3 {
+    display        : flex;
+    width          : 57%;
+    justify-content: flex-end;
+    flex-wrap      : wrap;
+}
+
+.logo_block_home3 {
+    width: 13%;
+}
+
+.show_on_tablette {
+    display: none;
+}
+
+.fa-angle-down {
+    font-size  : 10px;
+    margin-left: 2px;
+}
+
+@media screen and (max-width:1200px) {
+    .block_link_with_logo_home3 {
+        width: 50%;
+    }
+
+    .block_link_no_logo_home3 {
+        display: none;
+    }
+
+    .logo_block_home3 {
+        width: 18%;
+    }
+
+    .show_on_tablette {
+        display: block;
+    }
+
+    .txtbloc_after_menuu_home3 {
+        width: 67%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .logo_block_home3 {
+        width: 33%;
+    }
+
+    .first_block_after_menu_home3 {
+        justify-content: flex-start;
+    }
+}
+
+/**block after menu***/
+
+.first_block_after_menu_home3 {
+    display         : flex;
+    background-color: #f1f1f3;
+    padding         : 20px 0px 20px 0px;
+    justify-content : center;
+}
+
+.block_image_explore_after_menuu_home3 {
+    width  : 33%;
+    display: flex;
+}
+
+.txtbloc_after_menuu_home3 {
+    width     : 33%;
+    text-align: center;
+}
+
+.block_image_explore_after_menuu_home3>img {
+    width: 100%;
+}
+
+/**/
