@@ -193,7 +193,11 @@ li {
         width: 60%;
     }
 
-
+    .shop_his_hers>div {
+        margin: 20px;
+        width : 300px;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width:576px) {
