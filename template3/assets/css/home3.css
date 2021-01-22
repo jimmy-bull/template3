@@ -160,6 +160,12 @@ li {
 
 .shop_his_hers>div {
     margin: 5px;
+    width : 500px;
+}
+
+.img_his_hers {
+    width     : 100%;
+    object-fit: contain;
 }
 
 /**/
