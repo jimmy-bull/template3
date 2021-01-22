@@ -82,6 +82,10 @@ body {
         display        : flex;
         justify-content: flex-end;
     }
+
+    .first_block_after_menu_home3 {
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (max-width:576px) {
