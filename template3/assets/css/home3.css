@@ -91,8 +91,7 @@ body {
 
 .block_trending>div {
     width  : 200px;
-    margin : 0px 40px 0px 40px;
-    padding-right: 100px;
+    padding: 0px 40px 0px 40px;
 }
 
 .img_trendind {
