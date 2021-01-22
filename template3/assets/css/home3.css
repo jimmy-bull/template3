@@ -109,6 +109,7 @@ li {
 .block_trending>div {
     width      : 200px;
     align-items: center;
+    margin: 5px;
 }
 
 .img_trendind {
