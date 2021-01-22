@@ -47,7 +47,7 @@ function scrollFunction() {
             "animation": "fadeInDown",
             "animation-duration": "0.5s",
             'padding-bottom': "35px",
-            "width": 100 %
+            "width": "100%"
         });
 
         $('#search_icons_on_scroll').show();
