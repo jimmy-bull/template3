@@ -83,6 +83,10 @@ body {
     .logo_block_home3 {
         width: 33%;
     }
+
+    .first_block_after_menu_home3 {
+        justify-content: flex-start;
+    }
 }
 
 /**block after menu***/
