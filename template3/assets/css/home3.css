@@ -105,12 +105,10 @@ body {
 .block_image_explore_after_menuu_home3 {
     width  : 50%;
     display: flex;
-    background-color: red;
 }
 
 .txtbloc_after_menuu_home3 {
     width: 33%;
-    background-color: beige;
 }
 
 /**/
