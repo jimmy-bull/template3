@@ -86,8 +86,9 @@ body {
     display        : flex;
     justify-content: center;
 }
-.img_trendind{
-    width: 50%;
+
+.img_trendind {
+    width: 300px;
 }
 
 /**/
