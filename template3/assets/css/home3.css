@@ -100,21 +100,19 @@ li {
 
 .block_trending {
     display        : flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap      : wrap;
     max-width      : 100%;
     margin-top     : 5px;
 }
 
 .block_trending>div {
-
+    width      : 200px;
     align-items: center;
-
 }
 
 .img_trendind {
-    width     : 400px;
-    height    : 400px;
+    width     : 100%;
     object-fit: contain;
 }
 
