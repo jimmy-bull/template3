@@ -88,6 +88,7 @@ body {
     background-repeat  : no-repeat;
     background-position: top;
     position: absolute;
+    z-index: 1000;
 }
 
 .block_image_explore_after_menuu_home3 {
