@@ -85,6 +85,7 @@ body {
 .block_trending {
     display        : flex;
     justify-content: center;
+    flex-wrap      : nowrap;
 }
 
 .block_trending>div {
@@ -95,7 +96,7 @@ body {
 .img_trendind {
     width     : 200px;
     object-fit: contain;
-    padding: 20px;
+    padding   : 20px;
 }
 
 /**/
