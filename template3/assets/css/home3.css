@@ -107,6 +107,8 @@ li {
 }
 
 .block_trending>div {
+    width      : 400px;
+    height     : 400px;
     align-items: center;
 }
 
