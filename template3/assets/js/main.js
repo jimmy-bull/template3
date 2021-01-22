@@ -71,6 +71,13 @@ function scrollFunction() {
             "animation-duration": "0.5s",
             "animation": "fadeInUp",
         });
+        $('.navette').css({
+            "z-index": "10000",
+            "background-color": "rgba(117, 190, 218, 0.0)",
+            "boxShadow": "none",
+            "animation-duration": "0.5s",
+            "animation": "fadeInUp",
+        });
         $('.txt_search_home2').removeClass('col-lg-11')
         $('.txt_search_home2').addClass('col-lg-4')
         $('#search_icons_on_scroll').hide();
