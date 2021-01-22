@@ -86,10 +86,14 @@ body {
     display         : flex;
     background-color: #f1f1f3;
     padding         : 20px 0px 20px 0px;
-    justify-content: center;
+    justify-content : center;
 }
 
 .block_image_explore_after_menuu_home3 {
+    width: 23%;
+}
+
+.txtbloc_after_menuu_home3 {
     width: 23%;
 }
 
