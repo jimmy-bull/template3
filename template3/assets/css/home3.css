@@ -153,4 +153,14 @@ li {
         width: 33%;
     }
 
+    .block_trending>div {
+        width: 150px;
+    }
+
+    .img_trendind {
+        width     : 150px;
+        height    : 150px;
+        object-fit: contain;
+    }
+
 }
