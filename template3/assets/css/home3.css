@@ -107,13 +107,13 @@ li {
 }
 
 .block_trending>div {
-    width        : 300px;
+    width        : 500px;
     align-items  : center;
 }
 
 .img_trendind {
-    width     : 300px;
-    height    : 300px;
+    width     : 500px;
+    height    : 500px;
     object-fit: contain;
 }
 
