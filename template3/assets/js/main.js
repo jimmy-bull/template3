@@ -37,18 +37,7 @@ function scrollFunction() {
         });
         $('.txt_search_home2').removeClass('col-lg-4')
         $('.txt_search_home2').addClass('col-lg-11')
-        //FOR HOM PAGE 3
-        $(".navette").fadeIn("slow");
-        $('.navette').css({
-            'position': "fixed",
-            "z-index": "1000000000000000",
-            "background-color": "#fff",
-            "boxShadow": "0 10px 15px rgba(25, 25, 25, 0.1)",
-            "animation": "fadeInDown",
-            "animation-duration": "0.5s",
-            'padding-bottom': "35px",
-            "width": "100%"
-        });
+
 
         $('#search_icons_on_scroll').show();
     } else {
@@ -65,13 +54,6 @@ function scrollFunction() {
         });
         //For Menu on Home2 Page
         $('.home2_nav').css({
-            "z-index": "10000",
-            "background-color": "rgba(117, 190, 218, 0.0)",
-            "boxShadow": "none",
-            "animation-duration": "0.5s",
-            "animation": "fadeInUp",
-        });
-        $('.navette').css({
             "z-index": "10000",
             "background-color": "rgba(117, 190, 218, 0.0)",
             "boxShadow": "none",
