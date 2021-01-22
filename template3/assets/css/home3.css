@@ -150,6 +150,14 @@ li {
     justify-content: space-around;
 }
 
+.shop_his_hers {
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+    max-width      : 100%;
+    margin-top     : 5px;
+}
+
 /**/
 
 
