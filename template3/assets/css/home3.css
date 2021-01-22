@@ -82,7 +82,10 @@ body {
     width: 100%;
 }
 
-
+.block_trending {
+    display        : flex;
+    justify-content: center;
+}
 
 /**/
 
