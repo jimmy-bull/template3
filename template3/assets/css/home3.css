@@ -10,6 +10,7 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
+/*MENU*/
 .navette {
     display         : flex;
     justify-content : center;
@@ -77,6 +78,16 @@ body {
     .logo_block_home3 {
         width: 33%;
     }
+}
+
+/**block after menu***/
+
+.first_block_after_menu_home3 {
+    display: flex;
+}
+
+.block_image_explore_after_menuu_home3 {
+    width: 50%;
 }
 
 /**/
