@@ -89,6 +89,10 @@ body {
     align-items     : center;
 }
 
+.block_for_brand>img {
+    width: 10%;
+}
+
 /**/
 
 
