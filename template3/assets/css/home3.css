@@ -87,12 +87,13 @@ body {
     justify-content: center;
     flex-wrap      : wrap;
     max-width      : 100%;
-    align-items    : center;
+    margin-top     : 5px;
 }
 
 .block_trending>div {
-    width  : 300px;
-    padding: 0px 40px 0px 40px;
+    width      : 300px;
+    padding    : 0px 40px 0px 40px;
+    align-items: center;
 }
 
 .img_trendind {
