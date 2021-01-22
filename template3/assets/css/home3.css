@@ -82,16 +82,7 @@ body {
     width: 100%;
 }
 
-.block_for_brand {
-    display         : flex;
-    background-color: #212832;
-    justify-content : center;
-    align-items     : center;
-}
 
-.block_for_brand>img {
-    width: 10%;
-}
 
 /**/
 
