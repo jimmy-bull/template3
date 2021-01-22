@@ -169,6 +169,22 @@ li {
     object-fit: contain;
 }
 
+.block_man_hand {
+    background-image   : url('assets/img/montrepng1.png');
+    background-position: left;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    background-color   : #f2f2f0;
+}
+
+.block_apple_watch {
+    background-image   : url('assets/img/sportwatch.png');
+    background-position: right;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    background-color   : #f2f2f0;
+}
+
 /**/
 
 
