@@ -106,8 +106,7 @@ li {
     margin-top     : 5px;
 }
 
-.block_trending>div {
-    width      : 200px;
+.block_trending>div 
     align-items: center;
 }
 
