@@ -110,6 +110,7 @@ li {
     width      : 300px;
     align-items: center;
     margin     : 5px;
+    cursor     : pointer;
 }
 
 .img_trendind {
