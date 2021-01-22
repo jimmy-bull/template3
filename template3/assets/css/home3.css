@@ -164,6 +164,7 @@ li {
 
 .img_his_hers {
     width     : 600px;
+    height    : 600px;
     object-fit: contain;
 }
 
