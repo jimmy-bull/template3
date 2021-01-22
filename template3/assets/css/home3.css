@@ -107,9 +107,10 @@ li {
 }
 
 .block_trending>div {
-    width      : 300px;
-    padding    : 0px 40px 0px 40px;
-    align-items: center;
+    width        : 300px;
+    padding-right: 40px;
+    padding-left : 40px;
+    align-items  : center;
 }
 
 .img_trendind {
