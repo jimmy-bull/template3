@@ -129,11 +129,13 @@ li {
 }
 
 .btn_addcart_home3 {
-    border-style: solid;
-    border-width: 1px;
-    padding     : 10px;
-    text-align  : center;
-    width       : 100%;
+    border-style    : solid;
+    border-width    : 1px;
+    padding         : 10px;
+    text-align      : center;
+    width           : 100%;
+    background-color: white;
+    color           : #01FF70 !important;
 }
 
 /**/
