@@ -161,6 +161,7 @@ li {
 .shop_his_hers>div {
     margin: 5px;
     width : 500px;
+    display: none;
 }
 
 .img_his_hers {
