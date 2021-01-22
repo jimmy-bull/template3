@@ -72,6 +72,16 @@ body {
     .show_on_tablette {
         display: block;
     }
+
+    .block_image_explore_after_menuu_home3 {
+        display        : flex;
+        justify-content: flex-start;
+    }
+
+    .txtbloc_after_menuu_home3 {
+        display        : flex;
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (max-width:576px) {
