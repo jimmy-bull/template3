@@ -137,6 +137,7 @@ li {
     background-color: white;
     color           : #01FF70 !important;
     box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
+    border-color    : #f1f1f3;
 }
 
 /**/
