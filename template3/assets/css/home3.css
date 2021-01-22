@@ -73,19 +73,6 @@ body {
         display: block;
     }
 
-    .block_image_explore_after_menuu_home3 {
-        display        : flex;
-        justify-content: flex-start;
-    }
-
-    .txtbloc_after_menuu_home3 {
-        display        : flex;
-        justify-content: flex-end;
-    }
-
-    .first_block_after_menu_home3 {
-        justify-content: flex-start;
-    }
 }
 
 @media screen and (max-width:576px) {
@@ -110,6 +97,10 @@ body {
 
 .txtbloc_after_menuu_home3 {
     width: 33%;
+}
+
+.block_image_explore_after_menuu_home3>img {
+    width: 100%;
 }
 
 /**/
