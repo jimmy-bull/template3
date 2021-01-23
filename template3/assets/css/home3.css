@@ -319,6 +319,9 @@ li {
     justify-content: center;
     width          : 80%;
 }
+.sub_blog_block_home3{
+    display: flex;
+}
 
 .sub_blog_block_home3>div {
     width : 30%;
