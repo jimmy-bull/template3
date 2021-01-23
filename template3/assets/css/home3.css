@@ -196,6 +196,23 @@ li {
     width: 100%;
 }
 
+.reduction_home3_block {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+}
+
+.reduction_home3_block>div {
+    width: 40%;
+}
+
+.up_75_block {
+    background-image: url('https://images.unsplash.com/photo-1593989216105-bf59305eb565?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTU1N3x8d2F0Y2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-size : contain;
+    height          : 500px;
+    background-repeat: no-repeat;
+}
+
 /**/
 
 
