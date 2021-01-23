@@ -169,11 +169,11 @@ li {
 }
 
 .block_man_hand {
-    background-image   : url('../img/watch_other_side.png');
-    background-position: left;
-    background-size    : 60%;
-    background-repeat  : no-repeat;
-    background-color   : #f2f2f0;
+    background-color: #f2f2f0;
+    justify-content : space-around;
+    display         : flex;
+    align-items     : center;
+    text-align      : center;
 }
 
 .block_apple_watch {
@@ -181,7 +181,7 @@ li {
     justify-content : space-around;
     display         : flex;
     align-items     : center;
-    text-align: center;
+    text-align      : center;
 }
 
 .block_apple_watch>div {
