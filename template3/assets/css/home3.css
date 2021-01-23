@@ -350,6 +350,9 @@ li {
     .extra_sale_home3_child {
         padding: 5px;
     }
+    .to_reduce_on_phone_home3{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:280px) {
