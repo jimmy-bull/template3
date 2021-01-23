@@ -301,8 +301,7 @@ li {
     box-shadow      : 0 30px 15px rgba(25, 25, 25, 0.1);
     background-color: #212832;
     width           : 40%;
-    padding: 20px 0px 20px 0px;
-    align-items: center;
+    padding: 20px 0px 0px 0px;
 }
 
 
