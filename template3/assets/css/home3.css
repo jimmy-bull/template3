@@ -404,6 +404,10 @@ li {
         width  : 95%;
         padding: 20px;
     }
+    .sub_blog_block_home3>div {
+        width : 90%;
+        margin: 10px;
+    }
 }
 
 @media screen and (max-width:576px) {
