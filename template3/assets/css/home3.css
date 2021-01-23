@@ -302,6 +302,8 @@ li {
     background-color: #212832;
     width           : 40%;
     padding: 20px 0px 0px 0px;
+    display: flex;
+    align-items: center;
 }
 
 
