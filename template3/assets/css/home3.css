@@ -182,9 +182,9 @@ li {
     background-size    : 60%;
     background-repeat  : no-repeat;
     background-color   : #f2f2f0;
+    justify-content    : space-around;
     align-items        : center;
     display            : flex;
-    margin-left        : 10px;
 }
 
 /**/
