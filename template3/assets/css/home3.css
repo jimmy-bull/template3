@@ -181,6 +181,7 @@ li {
     justify-content : space-around;
     display         : flex;
     align-items     : center;
+    text-align: center;
 }
 
 .block_apple_watch>div {
