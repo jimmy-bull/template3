@@ -405,8 +405,7 @@ li {
         padding: 20px;
     }
     .sub_blog_block_home3>div {
-        width : 90%;
-        margin: 10px;
+       display: none;
     }
 }
 
