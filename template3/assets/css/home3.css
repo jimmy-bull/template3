@@ -171,7 +171,7 @@ li {
 .block_man_hand {
     background-image   : url('../img/watch_other_side.png');
     background-position: left;
-    background-size    : contain;
+    background-size    : 60%;
     background-repeat  : no-repeat;
     background-color   : #f2f2f0;
 }
