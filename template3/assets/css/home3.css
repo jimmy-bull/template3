@@ -188,6 +188,10 @@ li {
     width: 50%;
 }
 
+.block_man_hand>div {
+    width: 50%;
+}
+
 .img_400px_place {
     width: 100%;
 }
@@ -229,6 +233,7 @@ li {
     .txt_reduce_h1 {
         font-size: 15px;
     }
+
     .txt_reduce_h3 {
         font-size: 13px;
     }
