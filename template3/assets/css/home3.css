@@ -270,13 +270,16 @@ li {
 
 .block_after_brows_items {
     display         : flex;
-    justify-content : space-around;
+    justify-content : center;
     width           : 80%;
     background-color: #31475e;
     padding         : 20px 0px 20px 0px;
     box-shadow      : 0 30px 15px rgba(25, 25, 25, 0.1);
     border-radius   : 10px;
+}
 
+.block_after_brows_items>div {
+    margin: 10px;
 }
 
 .first_sub_block_after_brows_items {
@@ -293,6 +296,11 @@ li {
 
 .second_sub_block_after_brows_items>img {
     width: 100%;
+}
+
+.sub_block_after_brows_items {
+    box-shadow      : 0 30px 15px rgba(25, 25, 25, 0.1);
+    background-color: #212832;
 }
 
 
