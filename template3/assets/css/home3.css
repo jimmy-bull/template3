@@ -213,8 +213,9 @@ li {
     background-repeat  : no-repeat;
     background-color   : #f6f6f6;
     background-position: bottom center;
-    display: flex;
+    display            : flex;
     justify-content    : space-between;
+    border-width       : 0px;
 }
 
 .first_block_Of_second_block_reduction_home3 {
@@ -227,6 +228,7 @@ li {
     margin-bottom      : 10px;
     display            : flex;
     justify-content    : space-between;
+    border-width       : 0px;
 }
 
 .second_block_Of_second_block_reduction_home3 {
@@ -239,6 +241,7 @@ li {
     margin-bottom      : 10px;
     display            : flex;
     justify-content    : space-between;
+    border-width       : 0px;
 }
 
 .relax_sale_home3_container {
@@ -313,12 +316,13 @@ li {
     }
 
     .shop_his_hers>div {
-        width: 45%;
+        width: 50%;
     }
 
-    .shop_his_hers {
-        flex-wrap: wrap;
+    .to_delete_on_phone_home3 {
+        display: none;
     }
+
 }
 
 @media screen and (max-width:576px) {
@@ -350,8 +354,9 @@ li {
     .extra_sale_home3_child {
         padding: 5px;
     }
-    .to_reduce_on_phone_home3{
-        font-size: 18px;
+
+    .shop_his_hers {
+        flex-wrap: wrap;
     }
 }
 
