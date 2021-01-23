@@ -369,12 +369,17 @@ li {
         display: none;
     }
 
+    .block_after_brows_items {
+        width           : 100%;
+        background-color: transparent;
+    }
+
     .sub1_block_after_brows_items {
         display: none;
     }
 
     .sub_block_after_brows_items {
-        width: 100%;
+        width: 95%;
     }
 }
 
