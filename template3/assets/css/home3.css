@@ -169,7 +169,7 @@ li {
 }
 
 .block_man_hand {
-    background-image   : url('../img/montrepng1.png');
+    background-image   : url('../img/watch_other_side.png');
     background-position: left;
     background-size    : contain;
     background-repeat  : no-repeat;
@@ -177,7 +177,7 @@ li {
 }
 
 .block_apple_watch {
-    background-image   : url('../img/watch_other_side.png');
+    background-image   : url('../img/sportwatch.png');
     background-position: right;
     background-size    : 60%;
     background-repeat  : no-repeat;
