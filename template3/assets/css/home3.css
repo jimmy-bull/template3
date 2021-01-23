@@ -321,6 +321,7 @@ li {
 }
 .sub_blog_block_home3{
     display: flex;
+    justify-content: center;
 }
 
 .sub_blog_block_home3>div {
