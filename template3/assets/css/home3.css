@@ -200,6 +200,7 @@ li {
     display        : flex;
     align-items    : center;
     justify-content: space-around;
+    flex-wrap      : wrap;
 }
 
 .reduction_home3_block>div {
@@ -222,8 +223,9 @@ li {
     background-repeat  : no-repeat;
     background-color   : #f6f6f6;
     background-position: center;
-    margin-bottom: 10px;
+    margin-bottom      : 10px;
 }
+
 .second_block_Of_second_block_reduction_home3 {
     background-image   : url('https://images.unsplash.com/photo-1510124948545-a2b79a488ea5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80');
     background-size    : cover;
@@ -231,7 +233,7 @@ li {
     background-repeat  : no-repeat;
     background-color   : #f6f6f6;
     background-position: center;
-    margin-bottom: 10px;
+    margin-bottom      : 10px;
 }
 
 /**/
@@ -261,6 +263,7 @@ li {
     .shop_his_hers>div {
         width: 45%;
     }
+
     .reduction_home3_block>div {
         width: 45%;
     }
@@ -294,8 +297,16 @@ li {
     }
 
     .shop_his_hers>div {
-        width     : 100%;
+        width     : 95%;
         margin-top: 20px;
+    }
+
+    .reduction_home3_block>div {
+        width: 95%;
+    }
+
+    .up_75_block {
+        height: 250px;
     }
 }
 
