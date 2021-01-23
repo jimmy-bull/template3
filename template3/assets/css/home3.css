@@ -316,11 +316,12 @@ li {
 
 .blog_block_home3 {
     display        : flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .blog_block_home3>div {
-    width: 30%;
+    width : 30%;
+    margin: 10px;
 }
 
 .img_blog_block_home3 {
