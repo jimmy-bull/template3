@@ -225,6 +225,13 @@ li {
     .shop_his_hers>div {
         height: 300px;
     }
+
+    .txt_reduce_h1 {
+        font-size: 15px;
+    }
+    .txt_reduce_h3 {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width:576px) {
