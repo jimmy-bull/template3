@@ -223,6 +223,8 @@ li {
     background-color   : #f6f6f6;
     background-position: center;
     margin-bottom      : 10px;
+    display            : flex;
+    justify-content    : space-between;
 }
 
 .second_block_Of_second_block_reduction_home3 {
@@ -233,12 +235,15 @@ li {
     background-color   : #f6f6f6;
     background-position: center;
     margin-bottom      : 10px;
+    display            : flex;
+    justify-content    : space-between;
 }
 
 .relax_sale_home3_container {
     display        : flex;
     align-items    : center;
     justify-content: flex-end;
+    align-self     : flex-start;
 }
 
 .relax_sale_home3_child {
@@ -250,7 +255,7 @@ li {
     display        : flex;
     align-items    : center;
     justify-content: flex-start;
-    padding-top: 85px;
+    align-self     : flex-end;
 }
 
 .extra_sale_home3_child {
@@ -338,6 +343,10 @@ li {
 
     .up_75_block {
         height: 250px;
+    }
+
+    .extra_sale_home3_child {
+        padding: 5px;
     }
 }
 
