@@ -283,7 +283,7 @@ li {
 }
 
 .first_sub_block_after_brows_items {
-    width: 10%;
+    width: 20%;
 }
 
 .first_sub_block_after_brows_items>img {
@@ -291,7 +291,7 @@ li {
 }
 
 .second_sub_block_after_brows_items {
-    width: 20%;
+    width: 60%;
 }
 
 .second_sub_block_after_brows_items>img {
