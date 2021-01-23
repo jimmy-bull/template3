@@ -257,8 +257,13 @@ li {
         margin-top: 20px;
     }
 }
+
 @media screen and (max-width:280px) {
     .block_trending>div {
-         width: 100px; 
+        width: 100px;
+    }
+
+    .btn_addcart_home3 {
+        font-size: 15px;
     }
 }
