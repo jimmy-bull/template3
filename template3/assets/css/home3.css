@@ -177,13 +177,12 @@ li {
 }
 
 .block_apple_watch {
-    background-image   : url('../img/sportwatch.png');
+   
     background-position: right;
     background-size    : 60%;
     background-repeat  : no-repeat;
     background-color   : #f2f2f0;
     justify-content    : space-around;
-    align-items        : center;
     display            : flex;
 }
 
