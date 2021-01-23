@@ -301,9 +301,9 @@ li {
     box-shadow      : 0 30px 15px rgba(25, 25, 25, 0.1);
     background-color: #212832;
     width           : 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
 }
 
 
@@ -362,6 +362,13 @@ li {
         display: none;
     }
 
+    .block_after_brows_items {
+        display: none;
+    }
+
+    .sub_block_after_brows_items {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:576px) {
