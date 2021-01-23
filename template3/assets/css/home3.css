@@ -183,6 +183,10 @@ li {
     align-items     : center;
 }
 
+.block_apple_watch>div {
+    width: 50%;
+}
+
 /**/
 
 
