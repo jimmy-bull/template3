@@ -274,7 +274,7 @@ li {
     width           : 80%;
     background-color: #31475e;
     padding         : 20px 0px 20px 0px;
-    box-shadow      : 0 30px 15px rgba(25, 25, 25, 0.1);
+    box-shadow      : 0 30px 15px rgba(25, 25, 25, 0.5);
 }
 
 .block_after_brows_items>div {
