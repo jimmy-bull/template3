@@ -324,6 +324,7 @@ li {
     display        : flex;
     justify-content: center;
     width          : 80%;
+    flex-wrap      : wrap;
 }
 
 .sub_blog_block_home3>div {
@@ -399,13 +400,13 @@ li {
     .sub1_block_after_brows_items {
         display: none;
     }
+    .sub_blog_block_home3 {
+        width: 95%;
+    }
 
     .sub_block_after_brows_items {
         width  : 95%;
         padding: 20px;
-    }
-    .sub_blog_block_home3>div {
-       display: none;
     }
 }
 
@@ -441,6 +442,15 @@ li {
 
     .shop_his_hers {
         flex-wrap: wrap;
+    }
+
+    .sub_blog_block_home3 {
+        width: 95%;
+    }
+
+    .sub_blog_block_home3>div {
+        width : 100%;
+        margin: 10px;
     }
 }
 
