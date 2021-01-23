@@ -152,15 +152,14 @@ li {
 
 .shop_his_hers {
     display        : flex;
-    justify-content: space-around;
-    flex-wrap      : wrap;
     max-width      : 100%;
-    margin-top     : 5px;
+    margin     : 5px;
 }
 
 .shop_his_hers>div {
-    width : 40%;
+    width : 50%;
     height: 500px;
+    margin: 10px;
 }
 
 .img_his_hers {
@@ -261,12 +260,13 @@ li {
     }
 
     .shop_his_hers>div {
-        width: 45%;
+        width: 50%;
     }
 
     .reduction_home3_block>div {
         width: 45%;
     }
+    
 }
 
 @media screen and (max-width:768px) {
@@ -280,6 +280,12 @@ li {
 
     .txt_reduce_h3 {
         font-size: 15px;
+    }
+    .shop_his_hers>div {
+        width: 45%;
+    }
+    .shop_his_hers {
+        flex-wrap: wrap;
     }
 }
 
