@@ -213,6 +213,8 @@ li {
     background-repeat  : no-repeat;
     background-color   : #f6f6f6;
     background-position: bottom center;
+    display: flex;
+    justify-content    : space-between;
 }
 
 .first_block_Of_second_block_reduction_home3 {
