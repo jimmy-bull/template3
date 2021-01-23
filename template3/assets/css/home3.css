@@ -297,6 +297,13 @@ li {
     width: 100%;
 }
 
+.sub1_block_after_brows_items {
+    display        : flex;
+    justify-content: center;
+    margin         : 5px;
+    width          : 50%
+}
+
 .sub_block_after_brows_items {
     box-shadow      : 0 30px 15px rgba(25, 25, 25, 0.1);
     background-color: #212832;
