@@ -279,7 +279,7 @@ li {
     width: 10%;
 }
 
-.block_after_brows_items:nth-child(1) img {
+.block_after_brows_items:nth-child(1) > img {
     width: 100%;
 }
 
