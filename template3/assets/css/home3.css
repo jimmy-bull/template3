@@ -275,11 +275,19 @@ li {
     background-color: #01FF70;
 }
 
-.first_sub_block_after_brows_items{
+.first_sub_block_after_brows_items {
     width: 20%;
 }
 
-.first_sub_block_after_brows_items > img{
+.first_sub_block_after_brows_items>img {
+    width: 100%;
+}
+
+.second_sub_block_after_brows_items {
+    width: 60%;
+}
+
+.second_sub_block_after_brows_items>img {
     width: 100%;
 }
 
