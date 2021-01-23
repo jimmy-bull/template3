@@ -273,8 +273,10 @@ li {
     justify-content : space-around;
     width           : 80%;
     background-color: #31475e;
-    padding: 20px 0px 20px 0px;
-    box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
+    padding         : 20px 0px 20px 0px;
+    box-shadow      : 0 30px 15px rgba(25, 25, 25, 0.1);
+    border-radius   : 10px;
+
 }
 
 .first_sub_block_after_brows_items {
@@ -289,7 +291,7 @@ li {
     width: 20%;
 }
 
-.second_sub_block_after_brows_items>img{
+.second_sub_block_after_brows_items>img {
     width: 100%;
 }
 
