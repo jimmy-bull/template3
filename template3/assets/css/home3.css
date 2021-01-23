@@ -284,10 +284,10 @@ li {
 }
 
 .second_sub_block_after_brows_items {
-    width: 60%;
+    width: 20%;
 }
 
-.second_sub_block_after_brows_items>img {
+.second_sub_block_after_brows_items>img{
     width: 100%;
 }
 
