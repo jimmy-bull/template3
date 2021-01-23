@@ -317,6 +317,7 @@ li {
 .blog_block_home3 {
     display        : flex;
     justify-content: center;
+    width          : 80%;
 }
 
 .blog_block_home3>div {
