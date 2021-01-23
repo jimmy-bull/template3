@@ -182,6 +182,7 @@ li {
     background-size    : 60%;
     background-repeat  : no-repeat;
     background-color   : #f2f2f0;
+    align-items        : center;
 }
 
 /**/
