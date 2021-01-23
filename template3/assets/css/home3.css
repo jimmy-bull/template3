@@ -372,6 +372,7 @@ li {
     .block_after_brows_items {
         width           : 100%;
         background-color: transparent;
+        box-shadow: none;
     }
 
     .sub1_block_after_brows_items {
@@ -380,6 +381,7 @@ li {
 
     .sub_block_after_brows_items {
         width: 95%;
+        padding: 20px;
     }
 }
 
