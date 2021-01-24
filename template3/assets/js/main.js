@@ -184,7 +184,11 @@ $(document).ready(function () {
         // Parameters has to be in square bracket '[]'
         owl_home2.trigger('prev.owl.carousel', [1000]);
     })
+    $(window).load(function () {
+       alert('ok load')
+    });
 });
+
 
 
 
