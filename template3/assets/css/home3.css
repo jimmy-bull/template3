@@ -358,13 +358,30 @@ li {
     transform        : scale(1.1);
 }
 
+
+
+@keyframes zoom_for_bif_images {
+    from {
+        -ms-transform    : scale(1.2);
+        /* IE 9 */
+        -webkit-transform: scale(1.2);
+        /* Safari 3-8 */
+        transform        : scale(1.2);
+    }
+
+    to {
+        -ms-transform    : scale(1.0);
+        /* IE 9 */
+        -webkit-transform: scale(1.0);
+        /* Safari 3-8 */
+        transform        : scale(1.0);
+    }
+}
+
 .zoom_for_bif_images {
-    transition       : transform .5s;
-    -ms-transform    : scale(1.1);
-    /* IE 9 */
-    -webkit-transform: scale(1.1);
-    /* Safari 3-8 */
-    transform        : scale(1.1);
+    transition        : transform .5s;
+    animation-name    : zoom_for_bif_images;
+    animation-duration: 2s;
 }
 
 /**/
