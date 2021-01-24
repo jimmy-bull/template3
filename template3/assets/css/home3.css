@@ -336,6 +336,15 @@ li {
     width: 100%;
 }
 
+.reduction_home3_block>div>div {
+    cursor    : pointer;
+    transition: opacity 1s linear;
+}
+
+.reduction_home3_block>div>div:hover {
+    opacity: 0.5;
+}
+
 /**/
 
 
@@ -400,6 +409,7 @@ li {
     .sub1_block_after_brows_items {
         display: none;
     }
+
     .sub_blog_block_home3 {
         width: 95%;
     }
