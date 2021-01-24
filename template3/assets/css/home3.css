@@ -24,7 +24,7 @@ strong,
 span,
 input,
 li {
-    font-family: "Font Awesome 5 Pro" !important;
+    font-family: "Font Awesome 5 Duotone" !important;
 }
 
 /*MENU*/
@@ -38,7 +38,7 @@ li {
 
 .block_link_no_logo_home3>div {
     margin     : 0 3% 0% 3%;
-    font-family: "Font Awesome 5 Pro" !important;
+    font-family: "Font Awesome 5 Duotone" !important;
     font-size  : 14px;
 }
 
