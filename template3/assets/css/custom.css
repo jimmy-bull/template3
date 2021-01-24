@@ -19,11 +19,11 @@ strong,
 span,
 input,
 li {
-    font-family: 'Lato', sans-serif !important;
+    font-family: "Font Awesome 5 Free" !important;
 }
 
 button {
-    font-family: thebold !important;
+    font-family: "Font Awesome 5 Free" !important;
 }
 
 body,
@@ -130,7 +130,7 @@ nav.disabled {
     box-shadow      : 0 10px 15px rgba(25, 25, 25, 0.1);
     color           : white;
     padding         : 10px 20px 10px 20px;
-    transition      : background-color 1s,color 1s linear;
+    transition      : background-color 1s, color 1s linear;
     border-radius   : 20px;
     background-color: #01FF70;
     font-size       : 12.5px;
@@ -257,7 +257,7 @@ nav.disabled {
 .title_on_carou_big1 {
     font-size     : 20px;
     letter-spacing: 1px;
-    font-family   : thebold !important;
+    font-family   : "Font Awesome 5 Free" !important;
 }
 
 .vertical_horizon-center {
@@ -326,7 +326,7 @@ nav.disabled {
     position   : absolute;
     color      : #01FF70 !important;
     top        : 15px;
-    font-family: thebold !important;
+    font-family: "Font Awesome 5 Free" !important;
     font-size  : 20px;
     font-weight: bolder;
 }
@@ -354,7 +354,7 @@ nav.disabled {
 
 .secondTitle_Carou1 {
     margin-top : 50px;
-    font-family: thebold !important;
+    font-family: "Font Awesome 5 Free" !important;
     font-size  : 80px;
     color      : #40423c !important;
 }
