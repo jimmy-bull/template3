@@ -35,7 +35,7 @@ li {
     background-color: #f1f1f3;
 }
 
-.block_link_no_logo_home3>a {
+.block_link_no_logo_home3>div {
     margin        : 0 3% 0% 3%;
     text-transform: uppercase;
     font-family   : 'Lato', sans-serif !important;
@@ -447,20 +447,22 @@ li {
     border-width: 0px 0px 0.5px 0px;
     transition  : border-width .2s linear;
     border-color: #01FF70;
+    cursor      : pointer;
 }
 
 .sub_linky {
-    display: none;
-}
-
-.linky:hover .sub_linky {
-    display         : block;
     position        : absolute;
     z-index         : 1;
     background-color: white;
     box-shadow      : 0 30px 15px rgba(25, 25, 25, 0.3);
     width           : 10%;
-    padding: 20px;
+    padding         : 20px;
+    display         : none;
+
+}
+
+.linky:hover .sub_linky {
+    display: block;
 }
 
 .modal_promotion_box_fo_reduction_text {
