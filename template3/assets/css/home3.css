@@ -24,8 +24,7 @@ strong,
 span,
 input,
 li {
-    -webkit-font-smoothing: antialiased;
-    font-family           : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: 'Font Awesome\ 5 Free';
 }
 
 /*MENU*/
@@ -39,7 +38,7 @@ li {
 
 .block_link_no_logo_home3>div {
     margin     : 0 3% 0% 3%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: 'Font Awesome\ 5 Free';
     font-size  : 14px;
 }
 
