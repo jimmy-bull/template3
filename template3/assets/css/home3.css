@@ -336,12 +336,14 @@ li {
     width: 100%;
 }
 
-.reduction_home3_block>div>div {
+.reduction_home3_block>div>div,
+.up_75_block {
     cursor    : pointer;
     transition: opacity 1s linear;
 }
 
-.reduction_home3_block>div>div:hover {
+.reduction_home3_block>div>div:hover,
+.up_75_block:hover {
     opacity: 0.5;
 }
 
