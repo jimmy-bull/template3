@@ -338,7 +338,7 @@ li {
 
 .reduction_home3_block>div>div {
     cursor    : pointer;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s linear;
 }
 
 .reduction_home3_block>div>div:hover {
