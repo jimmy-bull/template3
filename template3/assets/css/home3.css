@@ -36,10 +36,13 @@ li {
 }
 
 .block_link_no_logo_home3>div {
-    margin        : 0 3% 0% 3%;
+    margin     : 0 3% 0% 3%;
+    font-family: 'Lato', sans-serif !important;
+    font-size  : 14px;
+}
+
+.mainnyly_link {
     text-transform: uppercase;
-    font-family   : 'Lato', sans-serif !important;
-    font-size     : 14px;
 }
 
 .block_link_with_logo_home3>a {
@@ -458,8 +461,8 @@ li {
     width           : 10%;
     padding         : 20px;
     display         : none;
-    top: 30px;
-
+    top             : 45px;
+    text-align      : center;
 }
 
 .linky:hover .sub_linky {
@@ -475,6 +478,10 @@ li {
     text-align    : center;
     cursor        : pointer;
     margin-left   : 5px;
+}
+
+ul li {
+    list-style-type: none;
 }
 
 @keyframes animate_opacity {
