@@ -24,7 +24,7 @@ strong,
 span,
 input,
 li {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free" !important;
 }
 
 /*MENU*/
@@ -38,7 +38,7 @@ li {
 
 .block_link_no_logo_home3>div {
     margin     : 0 3% 0% 3%;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free" !important;
     font-size  : 14px;
 }
 
