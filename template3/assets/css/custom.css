@@ -138,7 +138,7 @@ nav.disabled {
 
 .btn_carou_buy_now_big:hover {
     background-color: white;
-    transition      : background-color 0.5s;
+    transition      : background-color 0.5s linear;
     color           : #01FF70;
 }
 
