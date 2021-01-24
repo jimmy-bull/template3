@@ -132,17 +132,18 @@ li {
     font-size  : 15px;
     font-weight: bolder;
     text-align : center;
+    color      : #686868;
 }
 
 .btn_addcart_home3 {
     border-style    : solid;
-    border-width    : 1px;
+    border-width    : 0.5px;
     padding         : 10px;
     text-align      : center;
     width           : 100%;
     background-color: white;
-    color           : black;
-    border-color    : #f1f1f3;
+    color           : #686868;
+    border-color    : #686868;
 }
 
 
