@@ -139,10 +139,7 @@ li {
     border-color    : #f1f1f3;
 }
 
-.btn_addcart_home3:hover {
-    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1) !important;
-    transition: ease-in-out box-shadow 1s;
-}
+
 
 .block_for_price_heart_home3 {
     display        : flex;
