@@ -446,7 +446,7 @@ li {
     border-style: solid;
     border-width: 0px 0px 0.5px 0px;
     transition: border-width .2s linear ;
-    color: #01FF70;
+    border-color:  #01FF70;
 }
 
 
