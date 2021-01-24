@@ -1,6 +1,8 @@
 
 
-
+ window.onload = function(){
+     alert('kjhv')
+ }
 
 //Get the button FOR SCROLLING TO TOP
 var mybutton = document.getElementById("myBtn");
@@ -184,9 +186,7 @@ $(document).ready(function () {
         // Parameters has to be in square bracket '[]'
         owl_home2.trigger('prev.owl.carousel', [1000]);
     })
-    $(window).load(function () {
-       alert('ok load')
-    });
+    
 });
 
 
