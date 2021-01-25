@@ -93,13 +93,6 @@
             slide_direct_parent[index].style.transform = 'translate(0)';
         });  // Code for Safari 3.1 to 6.0
 
-        slide_direct_parent[index].addEventListener("webkitTransitionEnd", function (e) {
-            slide_direct_parent[index].style.transition = 'none';
-            slide_direct_parent[index].style.transform = 'translate(0)';
-            setTimeout(() => {
-                slide_direct_parent[index].style.transition = 'all 1s';
-            });
-        });
 
         slide_direct_parent[index].addEventListener("transitionend", function (e) {
             slide_direct_parent[index].style.transition = 'none';
