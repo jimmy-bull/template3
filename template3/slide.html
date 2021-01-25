@@ -1,6 +1,6 @@
 <script src="assets/js/fontawesome.js" crossorigin="anonymous"></script>
 <div class="main_block_carousel_own">
-    <div><i style="color: black;" class='fas fa-angle-left'></i></div>
+    <div><i style="color: black;" class='fas fa-angle-left prev_move'></i></div>
     <div class="main_slider_block">
         <ul class="slides">
             <li class="slide"><img class="img_trendind"
@@ -40,6 +40,7 @@
     let number_of_element = slide.length;
     let givenWidth = 300;
     let givenMargin = 20;
+    let direction = 0;
     // alert((number_of_element * (number_of_element + 1) + (number_of_element * givenMargin * 2) + (givenWidth * number_of_element)))
     //TO SET THE SLIDES WIDTH DEPENDING ON GIVENWIDTH AND GIVENMARGIN OF EACH ELEMENT ITEMS
     function calulWidth(number_of_element, givenWidth, givenMargin) {
@@ -49,11 +50,27 @@
         width_f_slides_drirectparent = calulWidth(slide_direct_parent[index].children.length, givenWidth, givenMargin);
         slide_direct_parent[index].style.width = width_f_slides_drirectparent;
         let next_move = document.getElementsByClassName('next_move')[index];
+        let prev_move = document.getElementsByClassName('prev_move')[index];
+
         next_move.addEventListener("click", function (e) {
             slide_direct_parent[index].style.transform = 'translate(-340px)';
+            direction = 1;
         })
+
+
+        prev_move.addEventListener("click", function (e) {
+            slide_direct_parent[index].style.transform = 'translate(340px)';
+            direction = -1;
+        })
+
         slide_direct_parent[index].addEventListener("webkitTransitionEnd", function (e) {
-            slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
+            if (direction == 1) {
+                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
+            }
+            else {
+                slide_direct_parent[index].appendChild(slide_direct_parent[index].lastElementChild)
+            }
+
             slide_direct_parent[index].style.transition = 'none';
             slide_direct_parent[index].style.transform = 'translate(0)';
             setTimeout(() => {
@@ -63,13 +80,20 @@
 
 
         slide_direct_parent[index].addEventListener("transitionend", function (e) {
-            slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
+            if (direction == 1) {
+                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
+            }
+            else {
+                slide_direct_parent[index].appendChild(slide_direct_parent[index].lastElementChild)
+            }
             slide_direct_parent[index].style.transition = 'none';
             slide_direct_parent[index].style.transform = 'translate(0)';
             setTimeout(() => {
                 slide_direct_parent[index].style.transition = 'all .5s';
             });
         });
+
+
     }
 
 
