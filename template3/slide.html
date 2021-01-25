@@ -1,0 +1,51 @@
+<div id="slider" class="slider">
+    <div class="wrapper">
+        <div id="slides" class="slides">
+            <div class="slide"><img
+                    src="https://img01.ztat.net/article/spp-media-p1/d8aaa249f1d23893bf36c4b0cd1f789d/254f4b6abacc408d822814c04d5a9b71.jpg?imwidth=606&filter=packshot"
+                    alt=""></div>
+            <div class="slide">Slide 2</div>
+            <div class="slide">Slide 3</div>
+            <div class="slide">Slide 4</div>
+            <div class="slide">Slide 5</div>
+        </div>
+    </div>
+    <a id="prev" class="control prev"></a>
+    <a id="next" class="control next"></a>
+</div>
+
+<script>
+    let slide = document.getElementsByClassName('slide');
+    let slide_direct_parent = document.getElementsByClassName('slides')[0];
+
+    let cloned_slide_direct_parent_children;
+    for (index = slide.length - 1; index >= 0; index--) {
+        cloned_slide_direct_parent_children = slide[index].cloneNode(true);
+        //  slide_direct_parent.prepend(cloned_slide_direct_parent_children);
+
+    }
+
+
+</script>
+<style>
+
+    .slides {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        border-color: red;
+        border-style: solid;
+    }
+
+    .slides>.slide {
+        border-style: solid;
+        margin: 50px;
+        padding: 20px;
+        background-color: red;
+        width: 500px;
+    }
+
+    .slide>img {
+        width: 100%;
+    }
+</style>
