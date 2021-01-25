@@ -68,7 +68,7 @@
                 slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
             }
             else {
-                slide_direct_parent[index].appendChild(slide_direct_parent[index].lastElementChild)
+                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
             }
 
             slide_direct_parent[index].style.transition = 'none';
@@ -84,7 +84,7 @@
                 slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
             }
             else {
-                slide_direct_parent[index].appendChild(slide_direct_parent[index].lastElementChild)
+                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
             }
             slide_direct_parent[index].style.transition = 'none';
             slide_direct_parent[index].style.transform = 'translate(0)';
