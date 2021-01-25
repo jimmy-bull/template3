@@ -92,6 +92,9 @@
             slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
             slide_direct_parent[index].style.transition = 'none';
             slide_direct_parent[index].style.transform = 'translate(0)';
+            setTimeout(() => {
+                slide_direct_parent[index].style.transition = 'all .5s';
+            });
         });  // Code for Safari 3.1 to 6.0
 
 
@@ -100,7 +103,7 @@
             slide_direct_parent[index].style.transition = 'none';
             slide_direct_parent[index].style.transform = 'translate(0)';
             setTimeout(() => {
-                slide_direct_parent[index].style.transition = 'all 1s';
+                slide_direct_parent[index].style.transition = 'all .5s';
             });
         });
     }
@@ -142,7 +145,7 @@
         width: 300px;
         margin: 20px;
         padding: 0;
-        transition: all 1s;
+        transition: all .5s;
 
     }
 
