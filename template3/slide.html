@@ -56,45 +56,15 @@
         next_move.addEventListener("click", function (e) {
             slide_direct_parent[index].style.transform = 'translate(-680px)';
             direction = 1;
-            main_slider_block[index].style.justifyContent = "flex-start";
         })
 
 
         prev_move.addEventListener("click", function (e) {
             slide_direct_parent[index].style.transform = 'translate(680px)';
             direction = -1;
-            main_slider_block[index].style.justifyContent = "flex-end";
         })
 
-        slide_direct_parent[index].addEventListener("webkitTransitionEnd", function (e) {
-            if (direction === 1) {
-                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
-            }
-            else {
-                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
-            }
 
-            slide_direct_parent[index].style.transition = 'none';
-            slide_direct_parent[index].style.transform = 'translate(0)';
-            setTimeout(() => {
-                slide_direct_parent[index].style.transition = 'all .5s';
-            });
-        });  // Code for Safari 3.1 to 6.0
-
-
-        slide_direct_parent[index].addEventListener("transitionend", function (e) {
-            if (direction === 1) {
-                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
-            }
-            else {
-                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
-            }
-            slide_direct_parent[index].style.transition = 'none';
-            slide_direct_parent[index].style.transform = 'translate(0)';
-            setTimeout(() => {
-                slide_direct_parent[index].style.transition = 'all .5s';
-            });
-        });
 
 
     }
