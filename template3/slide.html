@@ -84,7 +84,13 @@
     for (let index = 0; index < slide_direct_parent.length; index++) {
         width_f_slides_drirectparent = calulWidth(slide_direct_parent[index].children.length, givenWidth, givenMargin);
         slide_direct_parent[index].style.width = width_f_slides_drirectparent;
+        let next_move = document.getElementsByClassName('next_move')[index];
+        next_move.addEventListener("click", function (e) {
+            slide_direct_parent[index].style.transform = 'translate(-340px)';
+        })
     }
+
+
 
 
 
@@ -112,6 +118,7 @@
         border-style: solid;
         border-color: red;
         padding: 0;
+        transition: all 1s;
     }
 
     .slides li {
@@ -119,6 +126,7 @@
         width: 300px;
         margin: 20px;
         padding: 0;
+        transition: all 1s;
 
     }
 
