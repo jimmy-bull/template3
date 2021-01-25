@@ -54,14 +54,14 @@
         let main_slider_block = document.getElementsByClassName('main_slider_block');
 
         next_move.addEventListener("click", function (e) {
-            slide_direct_parent[index].style.transform = 'translate(-340px)';
+            slide_direct_parent[index].style.transform = 'translate(-680px)';
             direction = 1;
             main_slider_block[index].style.justifyContent = "flex-start";
         })
 
 
         prev_move.addEventListener("click", function (e) {
-            slide_direct_parent[index].style.transform = 'translate(340px)';
+            slide_direct_parent[index].style.transform = 'translate(680px)';
             direction = -1;
             main_slider_block[index].style.justifyContent = "flex-end";
         })
@@ -115,7 +115,7 @@
     }
 
     .main_slider_block {
-        width: 340px;
+        width: 680px;
         border-style: solid;
         border-color: green;
         overflow: scroll;
