@@ -41,6 +41,7 @@
     let givenWidth = 300;
     let givenMargin = 20;
     let direction = 0;
+    let increment_value = 680;
     // alert((number_of_element * (number_of_element + 1) + (number_of_element * givenMargin * 2) + (givenWidth * number_of_element)))
     //TO SET THE SLIDES WIDTH DEPENDING ON GIVENWIDTH AND GIVENMARGIN OF EACH ELEMENT ITEMS
     function calulWidth(number_of_element, givenWidth, givenMargin) {
@@ -54,8 +55,9 @@
         let main_slider_block = document.getElementsByClassName('main_slider_block');
 
         next_move.addEventListener("click", function (e) {
-            slide_direct_parent[index].style.transform = 'translate(-680px)';
+            slide_direct_parent[index].style.transform = 'translate(-' + increment_value + 'px)';
             direction = 1;
+            increment_value *= 2;
         })
 
 
