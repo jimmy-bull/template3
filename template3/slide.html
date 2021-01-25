@@ -56,14 +56,14 @@
         next_move.addEventListener("click", function (e) {
             slide_direct_parent[index].style.transform = 'translate(-340px)';
             direction = 1;
-            slide_direct_parent[index].style.justifyContent = "flex-start";
+          //  slide_direct_parent[index].style.justifyContent = "flex-start";
         })
 
 
         prev_move.addEventListener("click", function (e) {
             slide_direct_parent[index].style.transform = 'translate(340px)';
             direction = -1;
-            slide_direct_parent[index].style.justifyContent = "flex-end";
+           // slide_direct_parent[index].style.justifyContent = "flex-end";
         })
 
         slide_direct_parent[index].addEventListener("webkitTransitionEnd", function (e) {
