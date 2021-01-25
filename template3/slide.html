@@ -89,12 +89,14 @@
             slide_direct_parent[index].style.transform = 'translate(-340px)';
         })
         slide_direct_parent[index].addEventListener("webkitTransitionEnd", function (e) {
+            slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
             slide_direct_parent[index].style.transition = 'none';
             slide_direct_parent[index].style.transform = 'translate(0)';
         });  // Code for Safari 3.1 to 6.0
 
 
         slide_direct_parent[index].addEventListener("transitionend", function (e) {
+            slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
             slide_direct_parent[index].style.transition = 'none';
             slide_direct_parent[index].style.transform = 'translate(0)';
             setTimeout(() => {
