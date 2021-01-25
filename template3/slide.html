@@ -53,26 +53,41 @@
                     alt="steel silver clock picture @transparentpng.com"></li>
         </ul>
     </div>
-    <div><i class='fas fa-angle-right'></i></div>
+    <div><i class='fas fa-angle-right next_move'></i></div>
 </div>
 
 
 
 
 
-<script>
-    let slide = document.getElementsByClassName('slide');
-    let slide_direct_parent = document.getElementsByClassName('slides')[0];
 
+
+
+
+<script>
+    let slide = document.getElementsByClassName('slide'); //CAROUSEL ITEMS
+    let slide_direct_parent = document.getElementsByClassName('slides'); //MAIN BLOCK THAT CONTAIN CAROUSEL ITEMS
+    let width_f_slides_drirectparent;
     let cloned_slide_direct_parent_children;
     for (index = slide.length - 1; index >= 0; index--) {
         cloned_slide_direct_parent_children = slide[index].cloneNode(true);
         //  slide_direct_parent.prepend(cloned_slide_direct_parent_children);
     }
-    let number_of_element = 16;
+    let number_of_element = slide.length;
     let givenWidth = 300;
     let givenMargin = 20;
-   // alert((number_of_element * (number_of_element + 1) + (number_of_element * givenMargin * 2) + (givenWidth * number_of_element)))
+    // alert((number_of_element * (number_of_element + 1) + (number_of_element * givenMargin * 2) + (givenWidth * number_of_element)))
+    //TO SET THE SLIDES WIDTH DEPENDING ON GIVENWIDTH AND GIVENMARGIN OF EACH ELEMENT ITEMS
+    function calulWidth(number_of_element, givenWidth, givenMargin) {
+        return number_of_element * (number_of_element + 1) + (number_of_element * givenMargin * 2) + (givenWidth * number_of_element);
+    }
+    for (let index = 0; index < slide_direct_parent.length; index++) {
+        width_f_slides_drirectparent = calulWidth(slide_direct_parent[index].children.length, givenWidth, givenMargin);
+        slide_direct_parent[index].style.width = width_f_slides_drirectparent;
+    }
+
+
+
 
 //FORMULER OF CAROUSEL
 // 
@@ -94,7 +109,6 @@
     }
 
     .slides {
-        width: 5712px;
         border-style: solid;
         border-color: red;
         padding: 0;
@@ -118,7 +132,13 @@
         display: flex;
         justify-content: center;
     }
-    .fas{
+
+    .fas {
         padding: 30px;
+        cursor: pointer;
+    }
+
+    ul li {
+        list-style-type: none;
     }
 </style>
