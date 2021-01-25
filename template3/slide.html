@@ -96,11 +96,17 @@
         slide_direct_parent[index].addEventListener("webkitTransitionEnd", function (e) {
             slide_direct_parent[index].style.transition = 'none';
             slide_direct_parent[index].style.transform = 'translate(0)';
+            setTimeout(() => {
+                slide_direct_parent[index].style.transition = 'all 1s';
+            });
         });
 
         slide_direct_parent[index].addEventListener("transitionend", function (e) {
             slide_direct_parent[index].style.transition = 'none';
             slide_direct_parent[index].style.transform = 'translate(0)';
+            setTimeout(() => {
+                slide_direct_parent[index].style.transition = 'all 1s';
+            });
         });
     }
 
