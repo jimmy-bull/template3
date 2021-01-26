@@ -69,45 +69,116 @@
 </head>
 
 <body>
-    <div class="carousel">
-        <div style="background-color: indianred;">JIMMY AIME APPRENDRE SEULE</div>
-        <div style="background-color: saddlebrown;">SATTA EST TRES TIMIDE</div>
-        <div style="background-color: slateblue;">ANGE EST TRES BAVARDE</div>
-        <div style="background-color: cyan;">GEORGE AIME TROP L'ARGENT ET LA FEMME</div>
-        <div style="background-color: green;">PEE JOHN BUL EST MON PERE</div>
-        <div style="display: flex;">
-            <div><i style="color: black;" class='fas fa-angle-left prev_move'></i></div>
-            <div><i class='fas fa-angle-right next_move'></i></div>
+    <div class="carousel_parent">
+        <div class="carousel">
+            <div style="background-color: indianred;"> <img style="width: 100%;object-fit: contain;"
+                    src="https://images.unsplash.com/photo-1510124948545-a2b79a488ea5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHdhdGNoJTIwZ3JlZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="steel silver clock picture @transparentpng.com"></div>
+            <div style="background-color: saddlebrown;">SATTA EST TRES TIMIDE</div>
+            <div style="background-color: slateblue;">ANGE EST TRES BAVARDE</div>
+            <div style="background-color: cyan;">GEORGE AIME TROP L'ARGENT ET LA FEMME</div>
+            <div style="background-color: green;">PEE JOHN BUL EST MON PERE</div>
         </div>
+
     </div>
+    <div style="display: flex; justify-content: center; margin-top: 20px; cursor: pointer;">
+        <div class="prev_move" style="flex-basis: 200px;background-color: red; padding: 10px;">
+            prev </div>
+        <div class="next_move" style="background-color: lightgreen; padding: 10px;">next</div>
+    </div>
+
     <style>
         * {
             margin: 0;
             padding: 0;
         }
 
-        body {}
+        body {
+            overflow-x: hidden;
+        }
+
+        .carousel {
+            transition: all .7s;
+            display: flex;
+        }
 
         .carousel>div {
             float: left;
-
             text-align: center;
+        }
 
+        .carousel_parent {
+            display: flex;
+            justify-content: flex-start;
         }
     </style>
     <script>
         // alert( document.body.offsetWidth)
-
+        let direction = -1;
         let carousel_coutable_children;
         let carousel = document.getElementsByClassName('carousel');
+        let next_move = document.getElementsByClassName('next_move')[0];
+        let prev_move = document.getElementsByClassName('prev_move')[0];
+        let carousel_parent = document.getElementsByClassName('carousel_parent')[0]
         for (let index = 0; index < carousel.length; index++) {
-            carousel_coutable_children = carousel[index].children.length - 1;
-            carousel[index].style.width = (carousel[index].children.length - 1) * 100 + "%";
+            carousel_coutable_children = carousel[index].children.length;
+            carousel[index].style.width = (carousel[index].children.length) * 100 + "%";
             // alert(carousel[index].children.length)
             for (let i = 0; i < carousel_coutable_children; i++) {
                 carousel[index].children[i].style.width = document.body.offsetWidth;
             }
+            next_move.onclick = function () {
+                if (direction === 1) {
+                    carousel[index].prepend(carousel[index].lastElementChild)
+                    direction = -1;
+                }
+                carousel[index].style.transform = 'translate(' + - document.body.offsetWidth + 'px)';
+                carousel_parent.style.justifyContent = "flex-start";
+            }
+
+            prev_move.onclick = function () {
+                if (direction === -1) {
+                    carousel[index].appendChild(carousel[index].firstElementChild)
+                    direction = 1;
+                }
+                carousel[index].style.transform = 'translate(' + document.body.offsetWidth + 'px)'
+                carousel_parent.style.justifyContent = "flex-end";
+            }
+
+            carousel[index].addEventListener("transitionend", function (e) {
+                if (direction === -1) {
+                    carousel[index].appendChild(carousel[index].firstElementChild)
+                }
+                else if (direction === 1) {
+                    carousel[index].prepend(carousel[index].lastElementChild)
+                }
+
+                carousel[index].style.transition = 'none';
+                carousel[index].style.transform = 'translate(0)';
+                setTimeout(() => {
+                    carousel[index].style.transition = 'all .7s';
+                });
+            });
+
+            carousel[index].addEventListener("webkitTransitionEnd", function (e) {
+                if (direction === -1) {
+                    carousel[index].appendChild(carousel[index].firstElementChild)
+                }
+                else if (direction === 1) {
+                    carousel[index].prepend(carousel[index].lastElementChild)
+                }
+
+                carousel[index].style.transition = 'none';
+                carousel[index].style.transform = 'translate(0)';
+                setTimeout(() => {
+                    carousel[index].style.transition = 'all .7s';
+                });
+            });
+
+
         }
+
+
 
 
 
