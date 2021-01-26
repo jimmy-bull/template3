@@ -3,18 +3,34 @@
     <div><i style="color: black;" class='fas fa-angle-left prev_move'></i></div>
     <div class="main_slider_block">
         <ul class="slides">
-            <li class="slide"><img class="img_trendind"
-                    src="https://img01.ztat.net/article/spp-media-p1/f53d79d60a6e347a8c109d162e9f1924/ddc3632edbe24147aa2bcc3c32658e11.jpg?imwidth=606&filter=packshot"
-                    alt="steel silver clock picture @transparentpng.com"></li>
-            <li class="slide"><img class="img_trendind"
-                    src="https://img01.ztat.net/article/spp-media-p1/d8aaa249f1d23893bf36c4b0cd1f789d/254f4b6abacc408d822814c04d5a9b71.jpg?imwidth=606&filter=packshot"
-                    alt="steel silver clock picture @transparentpng.com"></li>
-            <li class="slide"><img class="img_trendind"
-                    src="https://img01.ztat.net/article/spp-media-p1/e3515aff308c3e32a37afd10b1acf007/a6ac3e79710d41a6917c51d2c69adbb8.jpg?imwidth=606&filter=packshot"
-                    alt="steel silver clock picture @transparentpng.com"></li>
-            <li class="slide"><img class="img_trendind"
-                    src="https://img01.ztat.net/article/spp-media-p1/e303a6d51bce3d9aa6f5ffae961032ab/cb2f5d2c23014b578cf8ef720eb455da.jpg?imwidth=606&filter=packshot"
-                    alt="steel silver clock picture @transparentpng.com"></li>
+            <li class="slide">
+                <div>
+                    <img class="img_trendind"
+                        src="https://img01.ztat.net/article/spp-media-p1/f53d79d60a6e347a8c109d162e9f1924/ddc3632edbe24147aa2bcc3c32658e11.jpg?imwidth=606&filter=packshot"
+                        alt="steel silver clock picture @transparentpng.com">
+                </div>
+            </li>
+            <li class="slide">
+                <div>
+                    <img class="img_trendind"
+                        src="https://img01.ztat.net/article/spp-media-p1/d8aaa249f1d23893bf36c4b0cd1f789d/254f4b6abacc408d822814c04d5a9b71.jpg?imwidth=606&filter=packshot"
+                        alt="steel silver clock picture @transparentpng.com">
+                </div>
+            </li>
+            <li class="slide">
+                <div>
+                    <img class="img_trendind"
+                        src="https://img01.ztat.net/article/spp-media-p1/e3515aff308c3e32a37afd10b1acf007/a6ac3e79710d41a6917c51d2c69adbb8.jpg?imwidth=606&filter=packshot"
+                        alt="steel silver clock picture @transparentpng.com">
+                </div>
+            </li>
+            <li class="slide">
+                <div>
+                    <img class="img_trendind"
+                        src="https://img01.ztat.net/article/spp-media-p1/e303a6d51bce3d9aa6f5ffae961032ab/cb2f5d2c23014b578cf8ef720eb455da.jpg?imwidth=606&filter=packshot"
+                        alt="steel silver clock picture @transparentpng.com">
+                </div>
+            </li>
         </ul>
     </div>
     <div><i class='fas fa-angle-right next_move'></i></div>
@@ -32,15 +48,11 @@
     let slide = document.getElementsByClassName('slide'); //CAROUSEL ITEMS
     let slide_direct_parent = document.getElementsByClassName('slides'); //MAIN BLOCK THAT CONTAIN CAROUSEL ITEMS
     let width_f_slides_drirectparent;
-    let cloned_slide_direct_parent_children;
-    for (index = slide.length - 1; index >= 0; index--) {
-        cloned_slide_direct_parent_children = slide[index].cloneNode(true);
-        //  slide_direct_parent.prepend(cloned_slide_direct_parent_children);
-    }
     let number_of_element = slide.length;
     let givenWidth = 300;
     let givenMargin = 20;
     let direction = -1;
+
     // alert((number_of_element * (number_of_element + 1) + (number_of_element * givenMargin * 2) + (givenWidth * number_of_element)))
     //TO SET THE SLIDES WIDTH DEPENDING ON GIVENWIDTH AND GIVENMARGIN OF EACH ELEMENT ITEMS
     function calulWidth(number_of_element, givenWidth, givenMargin) {
@@ -59,8 +71,8 @@
                 direction = -1;
             }
             main_slider_block[index].style.justifyContent = "flex-start";
-            slide_direct_parent[index].style.transform = 'translate(-680px)';
-
+            slide_direct_parent[index].style.transform = 'translate(-340px)';
+            //console.log(slide_direct_parent[index].children[0])
 
         })
 
@@ -72,7 +84,7 @@
             }
 
             main_slider_block[index].style.justifyContent = "flex-end";
-            slide_direct_parent[index].style.transform = 'translate(680px)';
+            slide_direct_parent[index].style.transform = 'translate(340px)';
         })
 
         slide_direct_parent[index].addEventListener("webkitTransitionEnd", function (e) {
@@ -108,14 +120,6 @@
 
     }
 
-
-
-
-
-
-//FORMULER OF CAROUSEL
-// 
-
 </script>
 <style>
     * {
@@ -124,9 +128,7 @@
     }
 
     .main_slider_block {
-        width: 680px;
-        /* border-style: solid;
-     border-color: green;*/
+        width: 100%;
         overflow: scroll;
         padding: 0;
         margin: 0;
@@ -135,30 +137,31 @@
         justify-content: flex-start;
     }
 
-
     .slides {
-        /* border-style: solid;
-     border-color: red;*/
         padding: 0;
         transition: all .5s;
         display: flex;
     }
 
     .slides li {
-        display: inline-block;
-        width: 300px;
+        /* width: 300px;*/
         margin: 20px;
         padding: 0;
         transition: all .5s;
-
+        list-style-type: none;
     }
 
-    .slides li img {
+    .slides li div {
+        width: 2000px;
+        border-style: solid;
+        border-color: red;
+    }
+
+    .slides li div>img {
         width: 100%;
     }
 
     .main_block_carousel_own {
-        margin: 10px;
         align-items: center;
         display: flex;
         justify-content: center;
