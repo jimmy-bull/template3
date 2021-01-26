@@ -4,31 +4,42 @@
     <div class="main_slider_block">
         <ul class="slides">
             <li class="slide">
-                <div>
-                    <img class="img_trendind"
-                        src="https://img01.ztat.net/article/spp-media-p1/f53d79d60a6e347a8c109d162e9f1924/ddc3632edbe24147aa2bcc3c32658e11.jpg?imwidth=606&filter=packshot"
-                        alt="steel silver clock picture @transparentpng.com">
+                <div style="background-color: grey;">
+                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                        temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
+                        quae recusandae ipsam fuga quo.
+
+                        <br> Lora ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                        temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
+                        quae recusandae ipsam fuga quo.
+                      </p>
                 </div>
             </li>
             <li class="slide">
-                <div>
-                    <img class="img_trendind"
-                        src="https://img01.ztat.net/article/spp-media-p1/d8aaa249f1d23893bf36c4b0cd1f789d/254f4b6abacc408d822814c04d5a9b71.jpg?imwidth=606&filter=packshot"
-                        alt="steel silver clock picture @transparentpng.com">
+                <div style="background-color: teal;">
+                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                        temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
+                        quae recusandae ipsam fuga quo.
+
+                    </p>
                 </div>
             </li>
             <li class="slide">
-                <div>
-                    <img class="img_trendind"
-                        src="https://img01.ztat.net/article/spp-media-p1/e3515aff308c3e32a37afd10b1acf007/a6ac3e79710d41a6917c51d2c69adbb8.jpg?imwidth=606&filter=packshot"
-                        alt="steel silver clock picture @transparentpng.com">
+                <div style="background-color: red;">
+                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                        temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
+                        quae recusandae ipsam fuga quo.</p>
                 </div>
             </li>
             <li class="slide">
-                <div>
-                    <img class="img_trendind"
-                        src="https://img01.ztat.net/article/spp-media-p1/e303a6d51bce3d9aa6f5ffae961032ab/cb2f5d2c23014b578cf8ef720eb455da.jpg?imwidth=606&filter=packshot"
-                        alt="steel silver clock picture @transparentpng.com">
+                <div style="background-color: gold;">
+                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                        temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
+                        quae recusandae ipsam fuga quo.
+                    
+                       <br> Lora ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                        temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
+                        quae recusandae ipsam fuga quo.</p>
                 </div>
             </li>
         </ul>
@@ -60,7 +71,8 @@
     }
     for (let index = 0; index < slide_direct_parent.length; index++) {
         width_f_slides_drirectparent = calulWidth(slide_direct_parent[index].children.length, givenWidth, givenMargin);
-        slide_direct_parent[index].style.width = width_f_slides_drirectparent;
+        // slide_direct_parent[index].style.width = width_f_slides_drirectparent;
+        alert(slide_direct_parent[index].offsetWidth)
         let next_move = document.getElementsByClassName('next_move')[index];
         let prev_move = document.getElementsByClassName('prev_move')[index];
         let main_slider_block = document.getElementsByClassName('main_slider_block');
@@ -132,7 +144,7 @@
         overflow: scroll;
         padding: 0;
         margin: 0;
-        overflow: hidden;
+        background-color: grey;
         display: flex;
         justify-content: flex-start;
     }
@@ -141,30 +153,35 @@
         padding: 0;
         transition: all .5s;
         display: flex;
+        justify-content: space-between;
     }
 
     .slides li {
         /* width: 300px;*/
-        margin: 20px;
         padding: 0;
+
         transition: all .5s;
         list-style-type: none;
     }
 
     .slides li div {
-        width: 2000px;
-        border-style: solid;
+        width: 712px;
         border-color: red;
+        border-width: 0px;
+        padding: 0px;
+        margin: 0;
+        height: 300px;
+        padding-top: 10px;
     }
 
-    .slides li div>img {
+   /* .slides li div {
         width: 100%;
-    }
+
+    }*/
 
     .main_block_carousel_own {
         align-items: center;
-        display: flex;
-        justify-content: center;
+        background-color: greenyellow;
     }
 
     .fas {
