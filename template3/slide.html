@@ -16,8 +16,6 @@
                     src="https://img01.ztat.net/article/spp-media-p1/e303a6d51bce3d9aa6f5ffae961032ab/cb2f5d2c23014b578cf8ef720eb455da.jpg?imwidth=606&filter=packshot"
                     alt="steel silver clock picture @transparentpng.com"></li>
         </ul>
-     
-         
     </div>
     <div><i class='fas fa-angle-right next_move'></i></div>
 </div>
@@ -42,8 +40,7 @@
     let number_of_element = slide.length;
     let givenWidth = 300;
     let givenMargin = 20;
-    let direction = 0;
-    let increment_value = 340;
+    let direction = -1;
     // alert((number_of_element * (number_of_element + 1) + (number_of_element * givenMargin * 2) + (givenWidth * number_of_element)))
     //TO SET THE SLIDES WIDTH DEPENDING ON GIVENWIDTH AND GIVENMARGIN OF EACH ELEMENT ITEMS
     function calulWidth(number_of_element, givenWidth, givenMargin) {
@@ -57,18 +54,56 @@
         let main_slider_block = document.getElementsByClassName('main_slider_block');
 
         next_move.addEventListener("click", function (e) {
-            slide_direct_parent[index].style.transform = 'translate(-' + increment_value + 'px)';
-            direction = 1;
-            increment_value *= 2;
+            if (direction === 1) {
+                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
+                direction = -1;
+            }
+            main_slider_block[index].style.justifyContent = "flex-start";
+            slide_direct_parent[index].style.transform = 'translate(-340px)';
+
+
         })
 
 
         prev_move.addEventListener("click", function (e) {
-            slide_direct_parent[index].style.transform = 'translate(680px)';
-            direction = -1;
+            if (direction === -1) {
+                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
+                direction = 1;
+            }
+
+            main_slider_block[index].style.justifyContent = "flex-end";
+            slide_direct_parent[index].style.transform = 'translate(340px)';
         })
 
+        slide_direct_parent[index].addEventListener("webkitTransitionEnd", function (e) {
+            if (direction === -1) {
+                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
+            }
+            else if (direction === 1) {
+                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
+            }
 
+            slide_direct_parent[index].style.transition = 'none';
+            slide_direct_parent[index].style.transform = 'translate(0)';
+            setTimeout(() => {
+                slide_direct_parent[index].style.transition = 'all .5s';
+            });
+        });  // Code for Safari 3.1 to 6.0
+
+
+        slide_direct_parent[index].addEventListener("transitionend", function (e) {
+            if (direction === -1) {
+                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
+            }
+            else if (direction === 1) {
+                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
+            }
+            slide_direct_parent[index].style.transition = 'none';
+            slide_direct_parent[index].style.transform = 'translate(0)';
+            setTimeout(() => {
+                slide_direct_parent[index].style.transition = 'all .5s';
+            });
+        });
 
 
     }
