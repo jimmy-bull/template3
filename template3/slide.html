@@ -1,23 +1,21 @@
 <script src="assets/js/fontawesome.js" crossorigin="anonymous"></script>
-<div class="main_block_carousel_own">
+<!---<div class="main_block_carousel_own">
     <div><i style="color: black;" class='fas fa-angle-left prev_move'></i></div>
     <div class="main_slider_block">
         <ul class="slides">
             <li class="slide">
-                <div style="background-color: grey;">
-                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                <div>
+                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit
+                        cupiditate maxime
                         temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
                         quae recusandae ipsam fuga quo.
-
-                        <br> Lora ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
-                        temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
-                        quae recusandae ipsam fuga quo.
-                      </p>
+                    </p>
                 </div>
             </li>
             <li class="slide">
-                <div style="background-color: teal;">
-                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                <div>
+                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit
+                        cupiditate maxime
                         temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
                         quae recusandae ipsam fuga quo.
 
@@ -25,19 +23,17 @@
                 </div>
             </li>
             <li class="slide">
-                <div style="background-color: red;">
-                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                <div>
+                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit
+                        cupiditate maxime
                         temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
                         quae recusandae ipsam fuga quo.</p>
                 </div>
             </li>
             <li class="slide">
-                <div style="background-color: gold;">
-                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
-                        temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
-                        quae recusandae ipsam fuga quo.
-                    
-                       <br> Lora ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit cupiditate maxime
+                <div>
+                    <p style="max-width: 100%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sit
+                        cupiditate maxime
                         temporibus ad non similique eaque incidunt consequatur. Perspiciatis eos saepe est itaque eaque
                         quae recusandae ipsam fuga quo.</p>
                 </div>
@@ -49,147 +45,74 @@
 
 
 
+-->
 
 
+<!DOCTYPE html>
+<html>
 
+<head>
+    <!-- <link rel="stylesheet" href="main.css?<?php echo  rand(); ?>">-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/home3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/js/carousel/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/js/carousel/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <script src="assets/js/fontawesome.js" crossorigin="anonymous"></script>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <meta charset="utf-8" />
+</head>
 
+<body>
+    <div class="carousel">
+        <div style="background-color: indianred;">JIMMY AIME APPRENDRE SEULE</div>
+        <div style="background-color: saddlebrown;">SATTA EST TRES TIMIDE</div>
+        <div style="background-color: slateblue;">ANGE EST TRES BAVARDE</div>
+        <div style="background-color: cyan;">GEORGE AIME TROP L'ARGENT ET LA FEMME</div>
+        <div style="background-color: green;">PEE JOHN BUL EST MON PERE</div>
+        <div>
+            <div><i style="color: black;" class='fas fa-angle-left prev_move'></i></div>
+            <div><i class='fas fa-angle-right next_move'></i></div>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
+        body {}
 
-<script>
-    let slide = document.getElementsByClassName('slide'); //CAROUSEL ITEMS
-    let slide_direct_parent = document.getElementsByClassName('slides'); //MAIN BLOCK THAT CONTAIN CAROUSEL ITEMS
-    let width_f_slides_drirectparent;
-    let number_of_element = slide.length;
-    let givenWidth = 300;
-    let givenMargin = 20;
-    let direction = -1;
+        .carousel>div {
+            float: left;
 
-    // alert((number_of_element * (number_of_element + 1) + (number_of_element * givenMargin * 2) + (givenWidth * number_of_element)))
-    //TO SET THE SLIDES WIDTH DEPENDING ON GIVENWIDTH AND GIVENMARGIN OF EACH ELEMENT ITEMS
-    function calulWidth(number_of_element, givenWidth, givenMargin) {
-        return number_of_element * (number_of_element + 1) + (number_of_element * givenMargin * 2) + (givenWidth * number_of_element);
-    }
-    for (let index = 0; index < slide_direct_parent.length; index++) {
-        width_f_slides_drirectparent = calulWidth(slide_direct_parent[index].children.length, givenWidth, givenMargin);
-        // slide_direct_parent[index].style.width = width_f_slides_drirectparent;
-        alert(slide_direct_parent[index].offsetWidth)
-        let next_move = document.getElementsByClassName('next_move')[index];
-        let prev_move = document.getElementsByClassName('prev_move')[index];
-        let main_slider_block = document.getElementsByClassName('main_slider_block');
+            text-align: center;
 
-        next_move.addEventListener("click", function (e) {
-            if (direction === 1) {
-                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
-                direction = -1;
+        }
+    </style>
+    <script>
+        // alert( document.body.offsetWidth)
+
+        let carousel_coutable_children;
+        let carousel = document.getElementsByClassName('carousel');
+        for (let index = 0; index < carousel.length; index++) {
+            carousel_coutable_children = carousel[index].children.length - 1;
+            carousel[index].style.width = (carousel[index].children.length - 1) * 100 + "%";
+            // alert(carousel[index].children.length)
+            for (let i = 0; i < carousel_coutable_children; i++) {
+                carousel[index].children[i].style.width = document.body.offsetWidth;
             }
-            main_slider_block[index].style.justifyContent = "flex-start";
-            slide_direct_parent[index].style.transform = 'translate(-340px)';
-            //console.log(slide_direct_parent[index].children[0])
-
-        })
+        }
 
 
-        prev_move.addEventListener("click", function (e) {
-            if (direction === -1) {
-                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
-                direction = 1;
-            }
-
-            main_slider_block[index].style.justifyContent = "flex-end";
-            slide_direct_parent[index].style.transform = 'translate(340px)';
-        })
-
-        slide_direct_parent[index].addEventListener("webkitTransitionEnd", function (e) {
-            if (direction === -1) {
-                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
-            }
-            else if (direction === 1) {
-                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
-            }
-
-            slide_direct_parent[index].style.transition = 'none';
-            slide_direct_parent[index].style.transform = 'translate(0)';
-            setTimeout(() => {
-                slide_direct_parent[index].style.transition = 'all .5s';
-            });
-        });  // Code for Safari 3.1 to 6.0
 
 
-        slide_direct_parent[index].addEventListener("transitionend", function (e) {
-            if (direction === -1) {
-                slide_direct_parent[index].appendChild(slide_direct_parent[index].firstElementChild)
-            }
-            else if (direction === 1) {
-                slide_direct_parent[index].prepend(slide_direct_parent[index].lastElementChild)
-            }
-            slide_direct_parent[index].style.transition = 'none';
-            slide_direct_parent[index].style.transform = 'translate(0)';
-            setTimeout(() => {
-                slide_direct_parent[index].style.transition = 'all .5s';
-            });
-        });
+    </script>
+</body>
 
-
-    }
-
-</script>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    .main_slider_block {
-        width: 100%;
-        overflow: scroll;
-        padding: 0;
-        margin: 0;
-        background-color: grey;
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .slides {
-        padding: 0;
-        transition: all .5s;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .slides li {
-        /* width: 300px;*/
-        padding: 0;
-
-        transition: all .5s;
-        list-style-type: none;
-    }
-
-    .slides li div {
-        width: 1424px;
-        border-color: red;
-        border-width: 0px;
-        padding: 0px;
-        margin: 0;
-        height: 300px;
-        padding-top: 10px;
-    }
-
-   /* .slides li div {
-        width: 100%;
-
-    }*/
-
-    .main_block_carousel_own {
-        align-items: center;
-        background-color: greenyellow;
-    }
-
-    .fas {
-        padding: 30px;
-        cursor: pointer;
-    }
-
-    ul li {
-        list-style-type: none;
-    }
-</style>
+</html>
