@@ -69,15 +69,25 @@
 </head>
 
 <body>
-    <div class="carousel_parent">
-        <div class="carousel">
-            <div style="background-color: indianred;"> <img style="width: 100%;object-fit: contain;"
+
+    <div class="carousel_parent" style="margin: 100px;background-color: red;overflow: hidden visible;">
+        <div class="carousel my_own_carou_true">
+            <div style="background-color: indianred;">
+                JIMMY AIME TRAVAILLER SEUL JIMMY AIME TRAVAILLER SEUL
+            </div>
+            <div style="background-color: saddlebrown;"><img style="width: 100%;"
                     src="https://images.unsplash.com/photo-1510124948545-a2b79a488ea5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHdhdGNoJTIwZ3JlZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                    alt="steel silver clock picture @transparentpng.com"></div>
-            <div style="background-color: saddlebrown;">SATTA EST TRES TIMIDE</div>
+                    alt=""></div>
             <div style="background-color: slateblue;">ANGE EST TRES BAVARDE</div>
             <div style="background-color: cyan;">GEORGE AIME TROP L'ARGENT ET LA FEMME</div>
             <div style="background-color: green;">PEE JOHN BUL EST MON PERE</div>
+            <div style="background-color:lime">
+                LE QUETIER EST PROPRE
+            </div>
+            <div style="background-color:mediumaquamarine">NO ONE CAN'T STOP YOU</div>
+            <div style="background-color:peru">FINDING MY WAY</div>
+            <div style="background-color:maroon">DOOING MY OWN SHIT</div>
+            <div style="background-color:mediumvioletred">GOING UP</div>
         </div>
 
     </div>
@@ -87,24 +97,19 @@
         <div class="next_move" style="background-color: lightgreen; padding: 10px;">next</div>
     </div>
 
+
+
+
     <style>
         * {
             margin: 0;
             padding: 0;
         }
 
-        body {
-            overflow-x: hidden;
-        }
-
         .carousel {
             transition: all .7s;
             display: flex;
-        }
-
-        .carousel>div {
-            float: left;
-            text-align: center;
+            justify-content: space-around;
         }
 
         .carousel_parent {
@@ -113,77 +118,99 @@
         }
     </style>
     <script>
-        // alert( document.body.offsetWidth)
-        let direction = -1;
-        let carousel_coutable_children;
-        let carousel = document.getElementsByClassName('carousel');
-        let next_move = document.getElementsByClassName('next_move')[0];
-        let prev_move = document.getElementsByClassName('prev_move')[0];
-        let carousel_parent = document.getElementsByClassName('carousel_parent')[0]
-        for (let index = 0; index < carousel.length; index++) {
-            carousel_coutable_children = carousel[index].children.length;
-            carousel[index].style.width = (carousel[index].children.length) * 100 + "%";
-            // alert(carousel[index].children.length)
-            for (let i = 0; i < carousel_coutable_children; i++) {
-                carousel[index].children[i].style.width = document.body.offsetWidth;
-            }
-            next_move.onclick = function () {
-                if (direction === 1) {
-                    carousel[index].prepend(carousel[index].lastElementChild)
-                    direction = -1;
-                }
-                carousel[index].style.transform = 'translate(' + - document.body.offsetWidth + 'px)';
-                carousel_parent.style.justifyContent = "flex-start";
-            }
+        // alert(document.getElementsByClassName('my_block')[0].offsetWidth)
 
-            prev_move.onclick = function () {
-                if (direction === -1) {
-                    carousel[index].appendChild(carousel[index].firstElementChild)
-                    direction = 1;
-                }
-                carousel[index].style.transform = 'translate(' + document.body.offsetWidth + 'px)'
-                carousel_parent.style.justifyContent = "flex-end";
-            }
+        function carousel(carousel_class, element_to_show, space_between_carsousel_items) {
+            let direction = -1;
+            let carousel_coutable_children;
+            let carousel = document.getElementsByClassName(carousel_class);
+            let next_move = document.getElementsByClassName('next_move');
+            let prev_move = document.getElementsByClassName('prev_move');
+            let carousel_parent = document.getElementsByClassName('carousel_parent');
+            //alert(document.getElementsByClassName('carousel_parent')[0].offsetWidth)
+            for (let index = 0; index < carousel.length; index++) {
+                //LA FORMULE DE CALCUL POUR TROUVER LE WIDTH MAXIMAL DU CAROUSEL ON FAIT:
+                //LE NOMBRE D'ITEMS DANS LE CAROUSEL DIVISER PAR LE NOMBRE QU'ON SOUHAITE AFFICHER PAR SLIDE LE TOUT MULITIPLIÉ PAR 100 QUI EST LA LAREGEUR MAXIMAL DU BODY
+                carousel_coutable_children = carousel[index].children.length;
 
-            carousel[index].addEventListener("transitionend", function (e) {
-                if (direction === -1) {
-                    carousel[index].appendChild(carousel[index].firstElementChild)
+                carousel[index].style.width = (carousel[index].children.length / element_to_show) * 100 + "%";
+                for (let i = 0; i < carousel_coutable_children; i++) {
+                    carousel[index].children[i].style.width = carousel_parent[index].offsetWidth;
+                    carousel[index].children[i].style.margin = space_between_carsousel_items + "px"; //TO SET THE SPACE BETWEEN EACH ITEMS
                 }
-                else if (direction === 1) {
-                    carousel[index].prepend(carousel[index].lastElementChild)
+                next_move[index].onclick = function () {
+                    if (direction === 1) {
+                        for (let element_to_move = 0; element_to_move < element_to_show; element_to_move++) {
+                            carousel[index].prepend(carousel[index].lastElementChild)
+                        }
+                        direction = -1;
+                    }
+                    carousel[index].style.transform = 'translate(' + - carousel_parent[index].offsetWidth + 'px)';
+                    carousel_parent[index].style.justifyContent = "flex-start";
                 }
 
-                carousel[index].style.transition = 'none';
-                carousel[index].style.transform = 'translate(0)';
-                setTimeout(() => {
-                    carousel[index].style.transition = 'all .7s';
+                prev_move[index].onclick = function () {
+                    if (direction === -1) {
+                        for (let element_to_move = 0; element_to_move < element_to_show; element_to_move++) {
+                            carousel[index].appendChild(carousel[index].firstElementChild)
+                        }
+                        direction = 1;
+                    }
+                    carousel[index].style.transform = 'translate(' + document.getElementsByClassName('carousel_parent')[0].offsetWidth + 'px)'
+                    carousel_parent[index].style.justifyContent = "flex-end";
+                }
+
+                carousel[index].addEventListener("transitionend", function (e) {
+                    if (direction === -1) {
+                        for (let element_to_move = 0; element_to_move < element_to_show; element_to_move++) {
+                            carousel[index].appendChild(carousel[index].firstElementChild)
+                        }
+                    }
+                    else if (direction === 1) {
+                        for (let element_to_move = 0; element_to_move < element_to_show; element_to_move++) {
+                            carousel[index].prepend(carousel[index].lastElementChild)
+                        }
+                    }
+
+                    carousel[index].style.transition = 'none';
+                    carousel[index].style.transform = 'translate(0)';
+                    setTimeout(() => {
+                        carousel[index].style.transition = 'all .7s';
+                    });
                 });
-            });
 
-            carousel[index].addEventListener("webkitTransitionEnd", function (e) {
-                if (direction === -1) {
-                    carousel[index].appendChild(carousel[index].firstElementChild)
-                }
-                else if (direction === 1) {
-                    carousel[index].prepend(carousel[index].lastElementChild)
-                }
+                carousel[index].addEventListener("webkitTransitionEnd", function (e) {
+                    if (direction === -1) {
+                        for (let element_to_move = 0; element_to_move < element_to_show; element_to_move++) {
+                            carousel[index].appendChild(carousel[index].firstElementChild)
+                        }
+                    }
+                    else if (direction === 1) {
+                        for (let element_to_move = 0; element_to_move < element_to_show; element_to_move++) {
+                            carousel[index].prepend(carousel[index].lastElementChild)
+                        }
+                    }
 
-                carousel[index].style.transition = 'none';
-                carousel[index].style.transform = 'translate(0)';
-                setTimeout(() => {
-                    carousel[index].style.transition = 'all .7s';
+                    carousel[index].style.transition = 'none';
+                    carousel[index].style.transform = 'translate(0)';
+                    setTimeout(() => {
+                        carousel[index].style.transition = 'all .7s';
+                    });
                 });
-            });
+
+
+            }
+
 
 
         }
 
+        carousel("my_own_carou_true", 2, 0)
+//carousel("carousel my_own_carou_false",2)
 
-
-
-
-
+//
     </script>
+
 </body>
 
 </html>
