@@ -97,6 +97,34 @@
         <div class="next_move" style="background-color: lightgreen; padding: 10px;">next</div>
     </div>
 
+    <div class="carousel_parent" style="margin: 10px;overflow: hidden visible;">
+        <div class="carousel my_own_carou_trues">
+            <div style="background-color: indianred;">
+                JIMMY AIME TRAVAILLER SEUL JIMMY AIME TRAVAILLER SEUL
+            </div>
+            <div style="background-color: saddlebrown;"><img style="width: 100%;"
+                    src="https://images.unsplash.com/photo-1510124948545-a2b79a488ea5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHdhdGNoJTIwZ3JlZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""></div>
+            <div style="background-color: slateblue;">ANGE EST TRES BAVARDE</div>
+            <div style="background-color: cyan;">GEORGE AIME TROP L'ARGENT ET LA FEMME</div>
+            <div style="background-color: green;">PEE JOHN BUL EST MON PERE</div>
+            <div style="background-color:lime">
+                LE QUETIER EST PROPRE
+            </div>
+            <div style="background-color:mediumaquamarine">NO ONE CAN'T STOP YOU</div>
+            <div style="background-color:peru">FINDING MY WAY</div>
+            <div style="background-color:maroon">DOOING MY OWN SHIT</div>
+            <div style="background-color:mediumvioletred">GOING UP</div>
+        </div>
+
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 20px; cursor: pointer;">
+        <div class="prev_move" style="flex-basis: 200px;background-color: red; padding: 10px;">
+            prev </div>
+        <div class="next_move" style="background-color: lightgreen; padding: 10px;">next</div>
+    </div>
+
+
 
 
 
@@ -126,8 +154,9 @@
             let carousel = document.getElementsByClassName(carousel_class);
             let next_move = document.getElementsByClassName('next_move');
             let prev_move = document.getElementsByClassName('prev_move');
-            let carousel_parent = document.getElementsByClassName('carousel_parent');
+            let carousel_parent = document.querySelectorAll('.carousel_parent')
             //alert(document.getElementsByClassName('carousel_parent')[0].offsetWidth)
+          
             for (let index = 0; index < carousel.length; index++) {
                 //LA FORMULE DE CALCUL POUR TROUVER LE WIDTH MAXIMAL DU CAROUSEL ON FAIT:
                 //LE NOMBRE D'ITEMS DANS LE CAROUSEL DIVISER PAR LE NOMBRE QU'ON SOUHAITE AFFICHER PAR SLIDE LE TOUT MULITIPLIÉ PAR 100 QUI EST LA LAREGEUR MAXIMAL DU BODY
@@ -198,15 +227,13 @@
                     });
                 });
 
-
             }
-
-
 
         }
 
-        carousel("my_own_carou_true", 1, 5)
-//carousel("carousel my_own_carou_false",2)
+        carousel("my_own_carou_true", 2, 5)
+        //carousel("my_own_carou_trues", 5, 15)
+       carousel("carousel my_own_carou_trues", 3,15)
 
 //
     </script>
