@@ -1,0 +1,236 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <script src="assets/js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="main_carousel_block">
+
+        <div>
+            <div class="carou_small_block_image_wide">
+                <div
+                    style="background-image: url(https://images.unsplash.com/photo-1550270163-c1ab58da2240?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODR8fGRpb3J8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                </div>
+                <div
+                    style="background-image: url(https://images.unsplash.com/photo-1596622723231-b20320c7346b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bG91aXMlMjB2dWl0dG9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                </div>
+                <div
+                    style="background-image: url(https://images.unsplash.com/photo-1586966145770-503e990fa98f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGxvdWlzJTIwdnVpdHRvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                </div>
+                <div
+                    style="background-image: url(https://images.unsplash.com/photo-1587947776971-44d14fe82194?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjZ8fGd1Y2NpfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);">
+                </div>
+            </div>
+            <section>
+                <img class="img_BAG hide" src="assets/img/dior.png" alt="">
+                <img class="img_BAG hide" src="assets/img/louis.png" alt="">
+                <img class="img_BAG hide" src="assets/img/louis1.png" alt="">
+                <img class="img_BAG" style="z-index: 10 !important;" src="assets/img/gucci.png" alt="">
+            </section>
+        </div>
+
+        <!--
+<div class="zone_opacity_reduce"></div>
+      -->
+    </div>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .carou_small_block_image_wide>div {
+            position: absolute;
+            height: 750px;
+            width: 500px;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            /* transition: width 2s;*/
+            right: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        .img_BAG {
+            position: absolute;
+            z-index: 100 !important;
+            right: 25%;
+            top: 200px;
+            width: 300px;
+            cursor: pointer;
+        }
+
+        .hide {
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        .active_bag {
+            animation-duration: 0.5s;
+            animation-name: bag_animation;
+            animation-timing-function: linear;
+        }
+
+        .active {
+            z-index: 10 !important;
+            animation-name: img1_animation;
+        }
+
+        .up_down {
+            animation-duration: 0.3s;
+            animation-name: up_down;
+            animation-timing-function: linear;
+        }
+
+        @keyframes up_down {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            0% {
+                transform: translateY(-50px);
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes bag_animation {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes img1_animation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+
+            }
+        }
+
+
+        .zone_opacity_reduce {
+            height: 333px;
+            opacity: 0.7;
+            /* width: 200px;*/
+            background-color: red;
+            z-index: 10;
+            /*margin-left: 100px;*/
+            top: 18px;
+            /*right: 220px;*/
+            width: 0px;
+            transform: translateX(0);
+            transition: width 2s, transform 2s;
+            transition-timing-function: linear;
+            position: absolute;
+        }
+    </style>
+    <video id="theVideo" style="max-width: 50%;display: none;" loop="" controls="" autoplay="" name="media">
+        <source src="file:///Users/macbook/Desktop/ui%20design/home/comp_3.mp4" type="video/mp4"></video>
+    <script>document.querySelector('#theVideo').playbackRate = 0.1; </script>
+    <script>
+        let i = 0;
+        let timer = 0;
+        let carou_small_block_image_wide = document.querySelector('.carou_small_block_image_wide');
+
+        let img_BAG = document.querySelectorAll('.img_BAG');
+
+        let opicty_reduce_transition = function () {
+            timer = setInterval(function () {
+                console.log(i)
+                if (i == carou_small_block_image_wide.children.length) {
+                    carou_small_block_image_wide.children[0].classList.add('active');
+                    carou_small_block_image_wide.children[carou_small_block_image_wide.children.length - 1].classList.remove('active');
+                    carou_small_block_image_wide.children[carou_small_block_image_wide.children.length - 1].style.zIndex = 1;
+                    // img_BAG[img_BAG.length - 1].classList.add('active_bag');
+                    img_BAG[img_BAG.length - 1].classList.add('hide');
+                    img_BAG[img_BAG.length - 1].classList.remove('up_down');
+                    img_BAG[img_BAG.length - 1].previousElementSibling.classList.remove('active_bag');
+                    for (let index = 0; index < carou_small_block_image_wide.children.length; index++) {
+                        carou_small_block_image_wide.children[index].style.zIndex = 0;
+                    }
+                    i = 0;
+                    setTimeout(() => {
+                        img_BAG[i].classList.remove('hide');
+                        img_BAG[i].classList.add('up_down');
+                    }, 700);
+
+                }
+
+                if (i < carou_small_block_image_wide.children.length) {
+                    carou_small_block_image_wide.children[i].classList.add('active');
+
+                    setTimeout(() => {
+                        img_BAG[i].classList.remove('hide');//
+                        img_BAG[i].classList.add('up_down');
+                    }, 700);
+
+                }
+
+                if (i == 0) {
+                    img_BAG[img_BAG.length - 1].classList.add('active_bag');
+                    img_BAG[img_BAG.length - 1].classList.add('hide');
+                    img_BAG[img_BAG.length - 1].classList.remove('up_down');
+
+                }
+
+                if (i == 1) {
+                    img_BAG[0].classList.add('active_bag');
+                    img_BAG[img_BAG.length - 1].classList.remove('active_bag');
+                }
+
+
+                if (i > 0 && i < carou_small_block_image_wide.children.length) {
+                    carou_small_block_image_wide.children[i].previousElementSibling.classList.remove('active');
+                    carou_small_block_image_wide.children[i].previousElementSibling.style.zIndex = 1;
+                    // img_BAG[i].previousElementSibling.classList.add('active_bag');
+
+                    img_BAG[i].previousElementSibling.classList.add('hide');
+                    img_BAG[i].previousElementSibling.classList.remove('up_down');
+                    //img_BAG[i].classList.remove('active_bag');
+                }
+
+                if (i > 1 && i < carou_small_block_image_wide.children.length) {
+                    img_BAG[i - 1].previousElementSibling.classList.remove('active_bag');
+                    img_BAG[i - 1].classList.add('active_bag');
+                }
+
+                setTimeout(() => {
+                    i++;
+                }, 1000);
+
+            }, 5000);
+        }
+
+        opicty_reduce_transition();
+
+        carou_small_block_image_wide.onmouseover = function (e) {
+            clearInterval(timer);
+        }
+        carou_small_block_image_wide.onmouseout = function (e) {
+            opicty_reduce_transition();
+        }
+    </script>
+
+
+</body>
+
+</html>
