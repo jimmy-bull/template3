@@ -220,14 +220,17 @@
             }, 5000);
         }
 
-        opicty_reduce_transition();
-
-        carou_small_block_image_wide.onmouseover = function (e) {
-            clearInterval(timer);
-        }
-        carou_small_block_image_wide.onmouseout = function (e) {
+        window.onload = function (e) {
             opicty_reduce_transition();
+
+            carou_small_block_image_wide.onmouseover = function (e) {
+                clearInterval(timer);
+            }
+            carou_small_block_image_wide.onmouseout = function (e) {
+                opicty_reduce_transition();
+            }
         }
+
     </script>
 
 
